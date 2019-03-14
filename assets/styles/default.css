@@ -200,7 +200,11 @@ a:visited{
 }
 
 .footer .logo{
-	fill: #fff;
+	width: 10rem;
+	height: 10rem;
+
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
 }
 
 .footer ul{
