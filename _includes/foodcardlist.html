@@ -1,0 +1,76 @@
+<!-- <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> -->
+
+{% for food in site.posts %}
+	<div class="card-columns main-content-mw">
+		<div class="card">
+		  <a href="{{ food.url }}"><img src="/assets/image/yoori-koo-51884-unsplash.jpg" class="card-img-top" alt="..."></a>
+		  <div class="card-body">
+		    <a href="{{ food.url }}"><h5 class="card-title">{{ food.title }}</h5></a>
+		    <p class="card-text">{{ food.excerpt }}</p>
+		    <a href="#" class="btn btn-dark">烙</a>
+		    <a href="#" class="btn btn-dark">鸡蛋</a>
+		  </div>
+		</div>
+
+
+		<div class="card">
+		  <img src="/assets/image/yoori-koo-51884-unsplash.jpg" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ food.title }}</h5>
+		    <p class="card-text">{{ food.excerpt }}</p>
+		    <a href="#" class="btn btn-dark">烙</a>
+		    <a href="#" class="btn btn-dark">鸡蛋</a>
+		  </div>
+		</div><div class="card">
+		  <img src="/assets/image/yoori-koo-51884-unsplash.jpg" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ food.title }}</h5>
+		    <p class="card-text">{{ food.excerpt }}</p>
+		    <a href="#" class="btn btn-dark">烙</a>
+		    <a href="#" class="btn btn-dark">鸡蛋</a>
+		  </div>
+		</div><div class="card">
+		  <img src="/assets/image/yoori-koo-51884-unsplash.jpg" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ food.title }}</h5>
+		    <p class="card-text">{{ food.excerpt }}</p>
+		    <a href="#" class="btn btn-dark">烙</a>
+		    <a href="#" class="btn btn-dark">鸡蛋</a>
+		  </div>
+		</div><div class="card">
+		  <img src="/assets/image/yoori-koo-51884-unsplash.jpg" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ food.title }}</h5>
+		    <p class="card-text">{{ food.excerpt }}</p>
+		    <a href="#" class="btn btn-dark">烙</a>
+		    <a href="#" class="btn btn-dark">鸡蛋</a>
+		  </div>
+		</div><div class="card">
+		  <img src="/assets/image/yoori-koo-51884-unsplash.jpg" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ food.title }}</h5>
+		    <p class="card-text">{{ food.excerpt }}</p>
+		    <a href="#" class="btn btn-dark">烙</a>
+		    <a href="#" class="btn btn-dark">鸡蛋</a>
+		  </div>
+		</div><div class="card">
+		  <img src="/assets/image/yoori-koo-51884-unsplash.jpg" class="card-img-top" alt="...">
+		  <div class="card-body">
+		    <h5 class="card-title">{{ food.title }}</h5>
+		    <p class="card-text">{{ food.excerpt }}</p>
+		    <a href="#" class="btn btn-dark">烙</a>
+		    <a href="#" class="btn btn-dark">鸡蛋</a>
+		  </div>
+		</div>
+
+
+
+	</div>
+{% endfor %}
