@@ -263,15 +263,16 @@ a:visited{
 
 .jumbotron{
 	background-image: url("/assets/image/sfb.jpg");
-	background-size: auto 100%;
+	/*background-size: auto 100%;*/
+	background-size: cover;
+	-webkit-background-size: cover;
+  	-o-background-size: cover;
 	border-radius: 0;
 	/*height: 31.5vh;*/
 	height: 100vh;
 	background-position: -35rem 0rem;
 }
-/*
 
-*/
 .jumbotron .m-lr_distance{
 	margin-top: 13rem;
 	margin-bottom: 3rem;
@@ -284,19 +285,13 @@ a:visited{
 	font-size: 1.55rem;
 }
 
-/**/
-
 .cookbook-jumbotron{
 	height: 31.5vh;
 	position: relative;
-background-position: 0rem 0rem;
+	background-position: 0rem 0rem;
 
 }
-/**/
 
-
-/*
-*/
 .cookbook-jumbotron__title{
 	position: absolute;
 	bottom: .75rem;
@@ -306,12 +301,11 @@ background-position: 0rem 0rem;
 		margin-left: .25rem;
 }
 
-
-/**/
 .cookbook-icon{
 	width: 100%;
 	font-size: 1rem;
 }
+
 .cookbook-icon ul{
 	list-style: none;
 	padding: 0rem;
@@ -322,8 +316,6 @@ background-position: 0rem 0rem;
 .cookbook-icon ul li:first-child{
 	padding-left: 0rem;
 }
-/*
-*/
 
 .cookbook-icon ul li {
 	padding-left: .75rem;
@@ -417,7 +409,7 @@ background-position: 0rem 0rem;
 	.jumbotron{
 		height: 66vh;
 		background-position: 0rem 0rem;
-		background-size: 100% auto;
+		/*background-size: 100% auto;*/
 		min-height: 66vh;
 	}
 
@@ -498,7 +490,7 @@ background-position: 0rem 0rem;
 		height: 87vh;
 		min-height: 87vh;
 		background-position: 0rem 0rem;
-		background-size: 100% auto;
+		/*background-size: 100% auto;*/
 	}
 
 	.m-lr__5{
@@ -602,7 +594,7 @@ background-position: 0rem 0rem;
 	.jumbotron{
 		height: 100vh;
 		background-position: 0rem 0rem;
-		background-size: 100% auto;
+		/*background-size: 100% auto;*/
 		min-height: 100vh;
 	}
 
