@@ -4,8 +4,35 @@
 	{% include header.html %}
 </head>
 <body>
-	{% include navbar.html %}
-	{{ content }}
+	{% include navbar.html parent="post" %}
+	{% include postbanner.html %}
+	<div class="container-fluid cookbook">
+		<div class="m-lr__5">
+			<div class="cookbook-icon text-center">
+				<ul>
+					<li>
+						<i class="fas fa-concierge-bell"></i>
+						<span class="icon-text ">{{ page.servings}}人份</span>
+					</li>
+					<li>
+						<i class="fas fa-stopwatch"></i>
+						<span  class="icon-text">{{ page.minute}}分钟</span>
+					</li>
+					<li>
+						<i class="fas fa-fire"></i>
+						<span  class="icon-text">{{ page.kcal}}卡路里</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="cookbook-info">
+				<h4>营养信息</h4>
+				<span>{{ page.nutritionalInfo}}</span>
+			</div>
+		{{ content }}		
+		</div>
+	</div>
+	
 	{% include footer.html %}
 </body>
 {% include scripts.html %}

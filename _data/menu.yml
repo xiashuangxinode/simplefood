@@ -1,9 +1,21 @@
+# - name: HOME
+#   url: /index.html
+
+# - name: MENU
+
+# - name: ABOUTUS
+
+# - name: CONTACT
+
+
 - name: 首页
   url: /index.html
 
 - name: 菜普
 
-- name: 关于
+- name: 关于我们
+
+- name: 联系我们
 
 
 
