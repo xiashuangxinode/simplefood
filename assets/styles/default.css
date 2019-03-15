@@ -263,15 +263,17 @@ a:visited{
 
 .jumbotron{
 	background-image: url("/assets/image/sfb.jpg");
-	background-size: 100% auto;
+	background-size: auto 100%;
 	border-radius: 0;
-	height: 31.5vh;
+	/*height: 31.5vh;*/
+	height: 100vh;
+	background-position: -35rem 0rem;
 }
 /*
 
 */
 .jumbotron .m-lr_distance{
-	margin-top: 2rem;
+	margin-top: 13rem;
 	margin-bottom: 3rem;
 }
 .display-1{
@@ -287,6 +289,8 @@ a:visited{
 .cookbook-jumbotron{
 	height: 31.5vh;
 	position: relative;
+background-position: 0rem 0rem;
+
 }
 /**/
 
@@ -297,6 +301,9 @@ a:visited{
 	position: absolute;
 	bottom: .75rem;
 	left: 1.25rem;
+
+		margin-right:.25rem; 
+		margin-left: .25rem;
 }
 
 
@@ -347,8 +354,8 @@ a:visited{
 .footer{
 	background-color: #343434;
 	font-size: 90%;
-	padding-top: 4.75rem;
-	padding-bottom: 2.25rem;
+	padding-top: 2.75rem;
+	padding-bottom: 2rem;
 	color: #ffffff;
 }
 
@@ -387,15 +394,31 @@ a:visited{
 @media all and (orientation : landscape) { 
 	.jumbotron{
 	  height: 100vh;
+	  background-position: 0rem 0rem;
+	}
+
+	.jumbotron .m-lr_distance{
+		margin-top: 2rem;
+		margin-bottom: 3rem;
 	}
 }
 
-/*@media (min-width: 576px) {  }*/
+/*@media (min-width: 576px) {  
+	.jumbotron{
+		height: 66vh;
+		background-position: 0rem 0rem;
+		background-size: 100% auto;
+		min-height: 66vh;
+	}
+}*/
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
 	.jumbotron{
 		height: 66vh;
+		background-position: 0rem 0rem;
+		background-size: 100% auto;
+		min-height: 66vh;
 	}
 
 	.m-lr__5{
@@ -429,12 +452,12 @@ a:visited{
 	}
 
 	.display-1{
-		font-size: 6rem;
+		font-size: 3rem;
 
 	}
 
 	.display-4{
-		font-size: 3.5rem;
+		font-size: 1.5rem;
 	}
 
 	.cookbook-jumbotron__title{
@@ -473,6 +496,9 @@ a:visited{
 @media (min-width: 992px) { 
 	.jumbotron{
 		height: 87vh;
+		min-height: 87vh;
+		background-position: 0rem 0rem;
+		background-size: 100% auto;
 	}
 
 	.m-lr__5{
@@ -506,12 +532,12 @@ a:visited{
 	}
 
 	.display-1{
-		font-size: 6rem;
+		font-size: 5rem;
 
 	}
 
 	.display-4{
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 	}
 
 	.cookbook-jumbotron__title{
@@ -575,6 +601,9 @@ a:visited{
 
 	.jumbotron{
 		height: 100vh;
+		background-position: 0rem 0rem;
+		background-size: 100% auto;
+		min-height: 100vh;
 	}
 
 	.jumbotron .m-lr_distance{
