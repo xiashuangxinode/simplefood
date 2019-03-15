@@ -10,9 +10,28 @@
 
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
-			{% for menu in site.data.menu %}
+			<!-- {% for menu in site.data.menu %}
 			<li class="nav-item"><a class="nav-link" href="{{ menu.url }}">{{ menu.name }}</a></li>
+			{% endfor %} -->
+
+			{% for menu in site.data.menu %}
+			{% if menu.items != nil %}
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          {{ menu.name }}
+			        </a>
+
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			        	{% for i in menu.items %}
+			        		<a class="dropdown-item" href="#">{{ i.name }}</a>
+			        	{% endfor %}
+			        </div>
+				</li>
+			{% else %}
+				<li class="nav-item"><a class="nav-link" href="{{ menu.url }}">{{ menu.name }}</a></li>
+			{% endif %}
 			{% endfor %}
-		</ul>
+			
+ 		</ul>
 	</div>
 </nav>
