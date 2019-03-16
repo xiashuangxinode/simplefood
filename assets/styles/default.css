@@ -1,223 +1,18 @@
-/*body{
-	margin: 0;
-}
-
-a:link,
-a:hover,
-a:active,
-a:visited{
-    color: #000000;
-    text-decoration: none;
-}
-
-.share a{
-	color: #ffffff;
-	padding: 0rem .55rem 0rem .55rem;
-}
-
-.card,
-.card .card-img-top,
-.jumbotron{
-	border-radius: 0;
-	border: none;
-}
-
-
-.jumbotron{
-	background-image: url("/assets/image/yoori-koo-51884-unsplash.jpg");
-	background-size: 100% auto;
-	height: 100vh;
-	font-weight: 900;
-}
-
-
-.card .btn{
-	border-radius: 0;
-	color: #cccccc;
-}
-
-.card .card-body{
-	padding-right: 0rem;
-	padding-left: 0rem;
-}
-
-footer{
-	color: #ffffff;
-	background-color: #343a40;
-
-	padding-top: 2.25rem;
-	padding-bottom: 2.25rem;
-}
-
-footer a:link,
-footer a:hover,
-footer a:active,
-footer a:visited{
-	color: #ffffff;
-	text-decoration: none;
-}
-
-footer .footer-body{
-	display: -ms-flexbox;
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-}
-
-footer .footer-body .icon{
-	width: 180px;
-	height: 180px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-footer .footer-body ul{
-	list-style: none;
-    padding: 0;
-    display: flex;
-    flex-flow: row;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer .footer-body ul li{
-	margin-right: .25rem;
-	margin-left: .25rem;
-}*/
-/*
-a:link,
-a:hover,
-a:active,
-a:visited{
-	color: #0c0a0b;
-}
-.navbar,
-.navbar-collase,
-.navbar-nav{
-	background-color: rgba(255,255,255,0);
-}
-.navbar-nav .nav-link{
-	font-weight: 600;
-}
-
-.jumbotron{
-	background-image: url("/assets/image/yoori-koo-51884-unsplash.jpg");
-	background-size: 100% auto;
-	height: 100vh;
-	border-radius: 0;
-}
-.slogan-content{
-	    display: flex;
-    flex-wrap: wrap;
-}
-.slogan{
-	font-weight: 700;
-    font-size: 6rem;
-    margin-left: auto;
-    line-height: 1.2;
-    margin-top: 6rem;
-    margin-right: auto;
-}*/
-
-/*
 *{
-	border: 1px solid red;
+	text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: transparent;
+
+	transition-property:color;
+	transition-duration:.35s;
+	-moz-transition-property:color;
+	-moz-transition-duration:.35s;
+	-webkit-transition-property:color;
+	-webkit-transition-duration:.35s;
+	-o-transition-property:color;
+	-o-transition-duration:.35s;
 }
-*/
-/*a:link,
-a:hover,
-a:active,
-a:visited{
-	color: #0c0a0b;
-	text-decoration: none;
-}
-
-.bg-color{
-	background-color: #f8f9fa;
-}
-
-.color{
-	color: #495057;
-}
-
-.center{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.main-content-mw {
-	padding: 0rem 2.8rem;
-}
-
-.navbar-m{
-	margin: 1.5rem 2.25rem;
-}
-
-.navbar-nav .nav-link{
-	font-weight: 700;
-}
-
-.share .share-link-icon{
-	padding-left: .5rem;
-	padding-right: .5rem;
-	color: rgba(0,0,0,.5);
-	transition: color .15s ease-in-out;
-}
-
-.share a:hover{
-	color: rgba(0,0,0,1);
-}
-
-
-.jumbotron{
-	background-image: url("/assets/image/yoori-koo-51884-unsplash.jpg");
-	background-size: 100% auto;
-	height: 100vh;
-	font-weight: 900;
-	border-radius: 0;
-}
-
-.card{
-	border:none;
-}
-
-.card,
-.card-img-top{
-	border-radius: 0;
-}
-
-.footer{
-	padding: 2.35rem 0rem;
-    background-color: #343434;
-    color: #fff;
-    font-size: .90rem;
-}
-
-.footer a{
-	color: #fff;
-	padding-right: .5rem;
-	padding-left: .5rem;
-}
-
-.footer .logo{
-	width: 10rem;
-	height: 10rem;
-
-	padding-top: 1.25rem;
-	padding-bottom: 1.25rem;
-}
-
-.footer ul{
-	list-style: none;
-	padding: 0;
-	display: flex;
-
-}*/
-
-/**{
-	border: 1px solid red;
-}
-*/
 body{
 	font-family: fa5-proxima-nova,"Helvetica Neue",'Roboto', Helvetica, sans-serif;
 	letter-spacing: 0.05rem;
@@ -243,6 +38,11 @@ a:visited{
 	color: #495057;
 }
 
+
+.p-lr-0{
+	padding-left: 0rem;
+	padding-right: 0rem;
+}
 
 
 .navbar-nav{
@@ -439,7 +239,10 @@ a:visited{
 		min-height: 66vh;
 	}
 }*/
-
+/*.m-tb__1-25{
+		margin-top: 1.25rem;
+		margin-bottom: 1.25rem;
+	}*/
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px){ 
 	.jumbotron{

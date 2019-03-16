@@ -37,8 +37,10 @@
 
 
 - name: 关于我们
+  url: /aboutus.html
 
 - name: 联系我们
+  url: /contact.html
 
 
 

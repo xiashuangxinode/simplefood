@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% include header.html %}
+</head>
+<body class="min-vh-100 bg-color color">
+	{% include navbar.html immersed="not-immersed" %}
+	<div class="container-fluid m-lr__5">
+		<h1>{{ page.title}}</h1>
+	{{ content }}
+	</div>
+	{% include footer.html %}
+</body>
+{% include scripts.html %}
+</html>

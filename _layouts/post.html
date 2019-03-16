@@ -4,7 +4,7 @@
 	{% include header.html %}
 </head>
 <body>
-	{% include navbar.html parent="post" %}
+	{% include navbar.html immersed="not-immersed" %}
 	{% include postbanner.html %}
 	<div class="container-fluid cookbook">
 		<div class="m-lr__5">
@@ -26,13 +26,13 @@
 						<span  class="icon-text">{{ page.kcal}}千卡</span>
 					</li>
 
-					<li>
+					<!-- <li>
 						<a href="javascript:print_cookbook()">
 							<i class="fas fa-print"></i>
 							<span class="icon-text">打印</span>
 							</a>
 						
-					</li>
+					</li> -->
 				</ul>
 			</div>
 
@@ -42,6 +42,27 @@
 			</p>
 
 			{{ content }}
+
+			<!-- <div class="cookbook-icon text-center text-uppercase font-weight-light m-tb__1-25">
+				<ul>
+					<li>
+						<i class="fas fa-concierge-bell"></i>
+					</li>
+					<li>
+						<i class="fas fa-stopwatch"></i>
+					</li>
+					<li>
+						<i class="fas fa-fire"></i>
+					</li>
+
+					<li>
+						<a href="javascript:print_cookbook()">
+							<i class="fas fa-print"></i>
+						</a>
+						
+					</li>
+				</ul>
+			</div> -->
 
 		</div>
 	</div>
