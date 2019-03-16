@@ -25,19 +25,39 @@
  -->
 
 <div class="m-lr__5">
-	<div class="card-columns">
+	<!-- <div class="card-columns">
 		<div class="card">
 			<a href="{{ food.url }}"> <img class="card-img-top" src="/assets/image/yoori-koo-51884-unsplash.jpg"> </a>
 			<div class="card-body">
 				<a href="{{ food.url }}"><h5>{{ food.title }}</h5></a>
 				<p class="card-text">{{ food.excerpt }}</p>
-				<div>
-					<a href="">{{ food.manufacture }}</a>
-					<a href="">{{ food.ingredients }}</a>
+				<div class="cookbook-times">
+					<i class="far fa-clock"></i> {{food.minute}}分钟
 				</div>
 			</div>
 		</div>
+	</div> -->
+
+	<div class="container-fluid">
+		<div class="row">
+			{% for cookbook in site.posts %}
+			<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 cookbook-card">
+				<div class="card">
+					<a href="{{ cookbook.url }}"><img class="card-img-top" src="/assets/image/yoori-koo-51884-unsplash.jpg"></a>
+
+					<div class="card-body">
+						<a href="{{ cookbook.url }}"><h5>{{ cookbook.title }}</h5></a>
+						<p class="card-text">{{ cookbook.excerpt }}</p>
+						<div class="cookbook-times">
+							<i class="far fa-clock"></i> {{food.minute}}分钟		
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
 	</div>
+
 </div>
 
 
