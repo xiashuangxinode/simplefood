@@ -1,26 +1,32 @@
 - name: 早餐
   node: 一份营养健康的早餐能为您的一天带来能量
-  url:
+  url: 
+  image: /assets/images/banner.jpg
 
 - name: 小吃
   node: 一份营养健康的早餐能为您的一天带来能量
   url:
+  image: /assets/images/banner.jpg
 
 - name: 主菜
   node: 一份营养健康的早餐能为您的一天带来能量
   url:
+  image: /assets/images/banner.jpg
 
 - name: 配菜
   node: 一份营养健康的早餐能为您的一天带来能量
   url:
+  image: /assets/images/banner.jpg
 
 - name: 汤类
   node: 一份营养健康的早餐能为您的一天带来能量
   url:
+  image: /assets/images/banner.jpg
 
 - name: 酱汁
   node: 一份营养健康的早餐能为您的一天带来能量
   url:
+  image: /assets/images/banner.jpg
 
 
     
