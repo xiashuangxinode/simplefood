@@ -1,23 +1,19 @@
 <ul class="row vw-100 d-flex justify-content-center">
 {% for t in site.data.cookbooktype %}
+
 <li class="col-sm-5 col-md-5 col-lg-3 col-xl-3 m-3 px-0">
-	<!-- <div class="card" style="border: none;" >
-	  <div class="card-body px-0">
-	    <h5 class="card-title">{{ t.name }}</h5>
+	<a href="{{ t.url }}">
+		<div class="card bg-dark text-white">
+		  <img src="{{ t.image }}" class="card-img" alt="{{ t.name }}">
+		  <div class="card-img-overlay cookbook-text">
+		    <h5 class="card-title">{{ t.name }}</h5>
+		    <p class="card-text ">{{ t.node }}</p>
+		    <!-- <p class="card-text">Last updated 3 mins ago</p> -->
+		  </div>
+		</div>
 
-	    <p class="card-text">{{ t.node }}</p>
-	    <button type="button" class="card-link btn btn-outline-secondary">浏览</button>
-	  </div>
-	</div> -->
-
-	<div class="card bg-dark text-black">
-  <img src="{{ t.image }}" class="card-img" alt="{{ t.name }}">
-  <div class="card-img-overlay">
-    <h5 class="card-title">{{ t.name }}</h5>
-    <p class="card-text">{{ t.node }}</p>
-    <!-- <p class="card-text">Last updated 3 mins ago</p> -->
-  </div>
-</div>
+		<div class="cookbook-type"></div>
+	</a>
 </li>
 {% endfor %}
 </ul>

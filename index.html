@@ -8,24 +8,22 @@ layout: default
 	<h1 style="display: none">simple food</h1>
 	<div class="row body-tb-p body-lr-p mx-0 m-t-5">
 		<h2 class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">食谱分类</h2>
-		 <p class="col-sm-12 col-md-12 col-lg-12 col-xl-12 font-weight-light text-center">“为了方便找到喜欢的食谱，我们为您将食谱进行了分类。”</p> 
-{% include cookbookcardlist_type.html %}
-		
-
+		 <p class="col-sm-12 col-md-12 col-lg-12 col-xl-12 font-weight-light text-center text-dark">“为了方便找到喜欢的食谱，我们为您将食谱进行了分类”</p> 
+		{% include cookbookcardlist_type.html %}
 	</div>
 
 	<div class="row body-tb-p body-lr-p mx-0 m-t-5">
 		<h2 class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">推荐食谱</h2>
-		<p class="col-sm-12 col-md-12 col-lg-12 col-xl-12 font-weight-light text-center">“为您推荐我们选择的9个优质食谱。”</p>
+		<p class="col-sm-12 col-md-12 col-lg-12 col-xl-12 font-weight-light text-center text-dark">“为您推荐我们选择的9个优质食谱”</p>
 		{% include foodcardlist_recommended.html %}
 	</div>
 
 
 	<div class="row body-tb-p body-lr-p mx-0 my-5 p-tb-10">
 		<h2 class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center mt-5">还有更多的食谱</h2>
-		<p class="col-sm-12 col-md-12 col-lg-12 col-xl-12 font-weight-light text-center">“我们为您推荐的还不够？或是没有喜欢的？我们这里还有更多...”</p>
+		<p class="col-sm-12 col-md-12 col-lg-12 col-xl-12 font-weight-light text-center text-dark">“我们为您推荐的还不够？或是没有喜欢的？我们这里还有更多”</p>
 		<div class="row vw-100 d-flex justify-content-center mb-5">
-			<button type="button" class="btn btn-primary">查看更多的食谱</button>
+			<a href="/cookbook.html"><button type="button" class="btn btn-primary">查看更多的食谱</button></a>
 		</div>
 	</div>
 </div>

@@ -1,5 +1,17 @@
 *{
-	/*border: 1px solid red;*/
+	text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: transparent;
+
+	transition-property:color;
+	transition-duration:.35s;
+	-moz-transition-property:color;
+	-moz-transition-duration:.35s;
+	-webkit-transition-property:color;
+	-webkit-transition-duration:.35s;
+	-o-transition-property:color;
+	-o-transition-duration:.35s;
 }
 
 body{
@@ -123,6 +135,17 @@ ul{
 
 .card{
 	border: none;
+}
+.cookbook-text{
+	z-index: 3000;
+}
+.cookbook-type{
+	position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.35);
+    width: 100%;
+    height: 100%;
 }
 
 
