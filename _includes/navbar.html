@@ -1,37 +1,19 @@
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-bg-color m-lr__5 m-tb__1-25 {% if include.immersed != 'not-immersed' %} navbar-absolute-top {% endif %}">
-	
-	<a href="#" class="navbar-brand">
-		<img class="icon" width="40" height="40" src="/assets/favicon/favicon-black.svg">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-bg-color body-lr-p body-tb-p {% if include.immersed != 'not-immersed' %} navbar-immersed__top {% endif %}">
+		
+	<a href="#" class="navbar-brand px-3">
+		<img class="navbar-logo" src="/assets/favicon/favicon-black.svg">
 	</a>
 
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-bars"></i>
   	</button>
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<!-- {% for menu in site.data.menu %}
-			<li class="nav-item"><a class="nav-link" href="{{ menu.url }}">{{ menu.name }}</a></li>
-			{% endfor %} -->
-
+	<div class="collapse navbar-collapse my-2 my-lg-0" id="navbarSupportedContent">
+		<div class="mr-auto"></div>
+		<ul class="navbar-nav my-2 my-lg-0 font-weight-bold">
 			{% for menu in site.data.menu %}
-			{% if menu.items != nil %}
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          {{ menu.name }}
-			        </a>
-
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			        	{% for i in menu.items %}
-			        		<a class="dropdown-item" href="#">{{ i.name }}</a>
-			        	{% endfor %}
-			        </div>
-				</li>
-			{% else %}
-				<li class="nav-item"><a class="nav-link" href="{{ menu.url }}">{{ menu.name }}</a></li>
-			{% endif %}
+			<li class="nav-item px-3"><a class="nav-link text-uppercase" href="{{ menu.url }}">{{ menu.name }}</a></li>
 			{% endfor %}
-			
  		</ul>
 	</div>
 </nav>
