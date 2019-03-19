@@ -5,16 +5,50 @@
 </head>
 <body class="vh-100">
 	{% include navbar.html immersed="not-immersed" %}
-	<div class="container-fluid">
-		<div class="card col-8">
-		      <img src="/assets/images/banner.jpg" class="card-img-top" alt="...">
-		      <div class="card-body">
-		        <h1 class="card-title">{{ page.title }}</h1>
-		        <p class="card-text">
-		        	{{ page.excerpt }}
-		        </p>
-		        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-		      </div>
+	<div class="container-fluid ">
+		<div class="row d-flex justify-content-center">
+			<div class="card col-sm-12 col-md-12 col-lg-11 col-xl-11">
+			      <img src="/assets/images/16-9.jpg" class="card-img-top" alt="...">
+			      <div class="card-body">
+			        <h1 class="card-title">{{ page.title }}</h1>
+			        <!-- <p class="card-text">
+			        	{{ page.excerpt }}
+
+
+			        	<div class=""></div>
+			        </p> -->
+
+			        <p class="font-italic font-weight-light">{{ page.excerpt }}</p>
+
+			        <h5 class="card-text">营养信息</h5>
+			        <p class="font-weight-light">{{ page.nutritionalInfo }}</p>
+
+			        <div class="container-fluid border-bottom">
+			        <small><ul class="row ext-muted text-uppercase  my-3">
+			        	<li class="pr-1"> {{ page.servings }} 人份</li>
+			        	<li class="px-2"> {{ page.minute }} 分钟</li>
+			        	<li class="px-2"> {{ page.kcal }} 卡路里</li>
+			        </ul></small>
+			        </div>
+
+
+			        <div class="card-text my-5 font-weight-light">
+			        	{{ content }}
+			        </div>
+
+			        <div class="container-fluid border-top border-bottom">
+			        		<ul class="row ext-muted text-uppercase my-3">
+					        	<a href=""><li class="pr-3"> <i class="fab fa-facebook"></i> </li></a> 
+					        	<a href=""><li class="px-3"> <i class="fab fa-instagram"></i> </li></a>
+					        	<a href=""><li class="px-3"> <i class="fas fa-link"></i></li></a>
+					        	<a href=""><li class="px-3"> <i class="fas fa-print"></i></li></a>
+
+					        </ul>
+			        </div>
+			        
+			       <!--  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+			      </div>
+			</div>
 		</div>
 	</div>
 	
