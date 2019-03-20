@@ -4,7 +4,7 @@
 	{% assign cookbooks = site.posts | where : 'title' , re.title %}
 	{% assign cookbook = cookbooks[0] %}
 			<li class="col-sm-5 col-md-5 col-lg-3 col-xl-3 m-3  px-0" >
-				<div class="card">
+				<!-- <div class="card">
 				  <a href="{{ cookbook.url }}">
 				  	<img src="/assets/images/16-9.jpg" class="card-img-top" alt="{{ cookbook.title }}">
 				  </a>
@@ -12,14 +12,15 @@
 				    <a href="{{ cookbook.url }}">
 				    	<h5 class="card-title">{{ cookbook.title }}</h5>
 				    </a>
-				    <p class="card-text text-dark">{{ cookbook.excerpt }}</p>
+				    <p class="card-text text-dark font-weight-light">{{ cookbook.excerpt }}</p>
 
 				    <div class="row mx-0 font-weight-light text-secondary size-85 ">
 				    	<span class="col-6 p-0"><i class="far fa-clock mr-2"></i>{{ cookbook.minute }}分钟</span>
 				    	<span class="col-6 p-0"><i class="fab fa-cloudscale mx-2"></i>{{ cookbook.kcal }}Kcal</span>
 				    </div>
 				  </div>
-				</div>
+				</div> -->
+				{% include cookbook_card.html cookbook = cookbook %}
 			</li>
 {% endfor %}
 

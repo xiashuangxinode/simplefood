@@ -114,6 +114,10 @@ ul{
 	z-index: 2030;
 }*/
 
+/*.navbar-logo{
+	width: 34px!important;
+	height: 34px!important;
+}*/
 .navbar-logo{
 	width: 34px!important;
 	height: 34px!important;
@@ -128,7 +132,7 @@ ul{
 .jumbotron{
 	background-image: url('/assets/images/banner.jpg');
 	background-size: cover;
-	height: 65vh;
+	height: 55vh;
 	border: none;
 	border-radius: 0;
 }
@@ -148,6 +152,15 @@ ul{
     height: 100%;
 }
 
+/*@media all and (orientation : landscape) { 
+	@media (min-width: 576px) and (max-width: 767.98px){
+		.navbar-logo{
+			width: 24px!important;
+			height: 24px!important;
+		}
+	}
+	
+}*/
 
 @media (min-width: 576px) and (max-width: 767.98px){
 	/*base*/
