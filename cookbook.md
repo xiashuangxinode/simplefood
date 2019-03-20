@@ -12,8 +12,8 @@ layout: default
 			</div>
 			<div class="my-3 px-2">
 				<ul class="row d-flex bd-highlight">
-					{% for cookbook in site.posts | limit : 4 %}
-					<li class="col-sm-12 col-md-6 col-lg-3 col-xl-3 p-2 flex-fill bd-highlight" >
+					{% for cookbook in site.posts limit : "4" %}
+					<li class="col-sm-6 col-md-6 col-lg-3 col-xl-3 p-2 flex-fill bd-highlight" >
 						{% include cookbook_card.html cookbook = cookbook %}
 					</li>
 					{% endfor %}
