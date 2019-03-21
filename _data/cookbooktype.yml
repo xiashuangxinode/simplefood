@@ -1,6 +1,6 @@
 - name: 早餐
   node:
-  url: 
+  url: /cookbooks/category/早餐
   image: https://gitee.com/xiashuangxi/sf/raw/master/images/sft/zc.png
 
 - name: 小吃

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="container-fluid body-lr-p my-5">
+	<ul id='cookbooks-container' class="row col-12 my-3 px-2  d-flex bd-highlight mx-0" count="{{ site.categories.[page.category] | size }}">
+
+		{% for cookbook in site.categories.[page.category] limit : site.cookbook.moreCount %}
+		<li class="col-sm-6 col-md-6 col-lg-3 col-xl-3 p-2 fiex-fill db-highlight" index="{{forloop.index}}">
+		{% include cookbook_card.html cookbook = cookbook %}
+		</li>
+		{% endfor %}
+		
+	</ul>
+
+	<div class="col-12 px-0 my-3" id="cookbooks-btn-container" >
+			<input type="text" class="hide" id="cookbooks-show-count" value="{{ site.cookbook.moreCount }}">
+			<button type="button" onclick="showMore('cookbooks-container','{{ site.cookbook.moreCount }}')" class="col-12 btn btn-secondary" id="cookbooks-btn">查看更多...</button>
+
+			<p class="text-center font-weight-light font-weight-light hide" id="cookbooks-finish" >没有更多的数据了...</p>
+
+		</div>
+</div>

@@ -8,7 +8,7 @@ layout: default
 		<li class="col-12 my-3">
 			<div class="border-bottom py-4  d-flex justify-content-between">
 				<h3 class="my-1">{{ t.name }}</h3>
-				<a class="font-weight-light my-1" href="">更多</a>
+				<a class="font-weight-light my-1" href="{{ t.url }}">更多</a>
 			</div>
 			<div class="my-3 px-2">
 				<ul class="row d-flex bd-highlight">
