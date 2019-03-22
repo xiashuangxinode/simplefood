@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-<div class="container-fluid body-lr-p my-5">
+<div class="container-fluid body-lr-p my-5 ">
+	<div class="border-bottom mx-3 py-4 d-flex justify-content-between">
+		<h3 class="my-1">{{ page.category }}</h3>
+	</div>
 	<ul id='cookbooks-container' class="row col-12 my-3 px-2  d-flex bd-highlight mx-0" count="{{ site.categories.[page.category] | size }}">
 
 		{% for cookbook in site.categories.[page.category] limit : site.cookbook.moreCount %}
@@ -12,7 +15,7 @@ layout: default
 		
 	</ul>
 
-	<div class="col-12 px-0 my-3" id="cookbooks-btn-container" >
+	<div class="col-12 my-3" id="cookbooks-btn-container" >
 			<input type="text" class="hide" id="cookbooks-show-count" value="{{ site.cookbook.moreCount }}">
 			<button type="button" onclick="showMore('cookbooks-container','{{ site.cookbook.moreCount }}')" class="col-12 btn btn-secondary" id="cookbooks-btn">查看更多...</button>
 
