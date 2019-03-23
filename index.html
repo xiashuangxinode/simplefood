@@ -3,29 +3,32 @@ layout: default
 ---
 
 <div class="container-fluid my-5" >
-	<div class="row pt-5 mx-0">
-		<h2 class="display-5 font-weight-bold col-12 text-center ">Cookbooks Category</h2>
+	<div class="row pt-5 mx-0 py-3 ">
+		<h2 class="display-5 font-weight-bold col-12 text-center ">食谱分类</h2>
 		<p class="font-italic font-weight-normal col-12 text-center ">“为了方便找到喜欢的食谱，我们为您将食谱进行了分类”</p>
-		{% include foodcardlist_recommended.html %}
+		{% include cookbookcardlist_type.html %}
 	</div>
 
+	<div class="row separated py-3"><hr></div>
 
-	<div class="row pt-5 mx-0">
-		<h2 class="display-5 font-weight-bold col-12 text-center ">Fan Favorite Recipes</h2>
+	<div class="row pt-5 mx-0 py-3 ">
+		<h2 class="display-5 font-weight-bold col-12 text-center ">推荐食谱</h2>
 		<p class="font-italic font-weight-normal col-12 text-center ">“为您推荐我们选择的9个优质食谱”</p>
 		{% include foodcardlist_recommended.html %}
 		<div class="col-12 d-flex justify-content-center">
-			<button type="button" class="btn btn-warning text-white text-justify font-weight-bold rounded-pill px-4">Explore more recipes</button>
+			<a href="/cookbook.html"><button type="button" class="btn btn-warning text-white text-justify font-weight-bold rounded-pill px-4">查看更多的食谱</button></a>
 		</div>
-		
 	</div>
 	
+	<div class="row separated py-3"><hr></div>	
 
-	<div class=" pt-5 my-5 text-white sf-cookbooks__more-bgimg flex-column d-flex align-items-center justify-content-center">
-		<h2 class="display-5 font-weight-bold text-center ">Joule Is Getting Smarter</h2>
+	<div class=" py-3  pt-5 my-5 text-white sf-cookbooks__more-bgimg flex-column d-flex align-items-center justify-content-center">
+		<h2 class="display-5 font-weight-bold text-center ">更多食谱</h2>
 		<p class="font-italic font-weight-normal text-center ">“我们为您推荐的还不够？或是没有喜欢的？我们这里还有更多”</p>
 		<div class="d-flex justify-content-center">
-			<button type="button" class="btn btn-warning text-white text-justify font-weight-bold rounded-pill px-4">Explore more recipes</button>
+			<a href="/cookbook.html"><button type="button" class="btn btn-warning text-white text-justify font-weight-bold rounded-pill px-4">查看更多的食谱</button></a>
 		</div>
 	</div>
 </div>
+
+<div class="separated py-3"><hr></div>

@@ -4,13 +4,8 @@
 	{% include header.html %}
 </head>
 <body class="vh-100">
-	{% include navbar.html immersed="not-immersed" %}
-	<div class="container-fluid body-lr-p my-5">
-		<div class="row d-flex justify-content-center px-3">
-			<h1 class="col-12">{{ page.title}}</h1>
-			<div class="col-12 my-3 font-weight-light">{{ content }}</div>
-		</div>
-	</div>
+	{% include navbar.html navModel='simple' %}
+	{{ content }}
 	{% include footer.html %}
 </body>
 {% include scripts.html %}

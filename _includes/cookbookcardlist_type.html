@@ -1,8 +1,8 @@
-<ul class="row vw-100 d-flex justify-content-center">
+<ul class="row d-flex justify-content-center">
 {% for t in site.data.cookbooktype %}
-<li class="col-sm-5 col-md-5 col-lg-3 col-xl-3 m-3 px-0">
+<li class="col-sm-5 col-md-5 col-lg-3 col-xl-3 m-2 my-3 rounded-lg">
 	<a href="{{ t.url }}">
-		<div class="card bg-dark text-white">
+		<div class="card bg-dark text-white border-0">
 		  <img src="{{ t.image }}" class="card-img" alt="{{ t.name }}">
 		  <div class="card-img-overlay cookbook-text align-items-center d-flex">
 		  	<div class="text-center col-12">
@@ -10,8 +10,10 @@
 			    <p class="card-text font-weight-normal ">{{ t.node }}</p>
 		    </div>
 		  </div>
+
+		  <div class="cookbook-type rounded-lg"></div> 
 		</div>
-		<div class="cookbook-type"></div>
+		
 	</a>
 </li>
 
