@@ -1,18 +1,20 @@
 {% if include.cookbook != nil %}
 {% assign cookbook = include.cookbook %}
-<div class="card">
+<div class="card border-0">
   <a href="{{ cookbook.url }}">
-  	<img src="/assets/images/16-9.jpg" class="card-img-top shadow-sm bg-white rounded" alt="{{ cookbook.title }}">
+  	<img src="/assets/images/sf-cookbooks-2-m.jpg" class="card-img-top bg-white rounded-lg" alt="{{ cookbook.title }}">
   </a>
-  <div class="card-body px-0">
+  <div class="card-body">
     <a href="{{ cookbook.url }}">
-    	<h5 class="card-title">{{ cookbook.title }}</h5>
+    	<h5 class="card-title font-weight-bold">{{ cookbook.title }}</h5>
     </a>
     <p class="card-text text-dark font-weight-light">{{ cookbook.excerpt }}</p>
 
-    <div class="row mx-0 font-weight-light text-secondary size-85 ">
-    	<span class="col-6 p-0"><i class="far fa-clock mr-2"></i>{{ cookbook.minute }}分钟</span>
-    	<span class="col-6 p-0"><i class="fab fa-cloudscale mx-2"></i>{{ cookbook.kcal }}Kcal</span>
+    <div class="row font-weight-light text-secondary text-muted">
+    <small>
+    	<span class="col-6"><i class="far fa-clock mr-2"></i>{{ cookbook.minute }}分钟</span>
+    	<span class="col-6"><i class="fab fa-cloudscale mx-2"></i>{{ cookbook.kcal }}Kcal</span>
+    </small>
     </div>
   </div>
 </div>

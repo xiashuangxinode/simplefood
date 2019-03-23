@@ -37,7 +37,7 @@
 
 
 
-
+/*
 
 
 
@@ -84,4 +84,36 @@
 			})
 	}
 
-})(window);
+})(window);*/
+
+
+
+
+!( (window) => {
+
+	window.showOrhide = (el) => {
+		var obj = $(el);
+		var isshow = $(obj).attr("show");
+		if(isshow === undefined ){
+			$(obj).attr("show","");
+			$(obj).removeAttr("hide");
+		}else{
+			$(obj).attr("hide","");
+			$(obj).removeAttr("show");
+		}
+	}
+
+	/*var eventBind = () =>{
+		$('[sf-nav-togger]').bind('click' , () => {
+			var tc = $('[sf-nav-togger]').attr('data-target');
+			showOrhide(tc)
+		});
+	}*/
+
+/*	var init = () =>{
+		eventBind();
+	}
+
+	init();
+*/
+} )(window);
