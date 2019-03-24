@@ -23,6 +23,10 @@ body{
 	margin: 0px;
 }
 
+.bg-color{
+
+}
+
 a:link, a:hover, a:active, a:visited{
 	color: #5d5d5d;
 	text-decoration: none;
@@ -68,7 +72,7 @@ ul{
 	letter-spacing: .015rem;
 	margin: 0px;
 }*/
-/*
+
 @-webkit-keyframes nav-fadein {
   	0% {
 		opacity: 0; 
@@ -93,22 +97,38 @@ ul{
 	100% {
 		opacity: 1; 
 	} 
-}*/
+}
 
 .sf-nav-container{
 	position: absolute;
 	width: 100%;
 	top: 0px;
 	left: 0px;
-	/*animation: nav-fadein 1.5s 1;*/
-
 	margin-top: 0;
     opacity: 1;
-    transition: opacity ease 300ms;
+
+	animation: nav-fadein 1.5s 1;
+	transition: opacity ease 300ms;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 20%, transparent 100%);
 }
 
+.sf-simple-nav-container{
+	/*position: absolute;*/
+	width: 100%;
+	/*top: 0px;
+	left: 0px;*/
+	margin-top: 0;
+    opacity: 1;
 
+	animation: nav-fadein 1.5s 1;
+	/*transition: opacity ease 300ms;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 20%, transparent 100%);*/
+}
+.sm-sf-simple-nav-container{
+
+}
+
+.sm-sf-simple-nav-container .nav-item,
 .sm-sf-nav-container .nav-item{
 	position: fixed;
     top: 0;
