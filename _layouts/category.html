@@ -16,10 +16,10 @@ layout: default
 	</ul>
 
 	<div class="col-12 my-3" id="cookbooks-btn-container" >
-			<input type="text" class="hide" id="cookbooks-show-count" value="{{ site.cookbook.moreCount }}">
+			<input type="text" class="d-none" id="cookbooks-show-count" value="{{ site.cookbook.moreCount }}">
 			<button type="button" onclick="showMore('cookbooks-container','{{ site.cookbook.moreCount }}')" class="col-12 btn btn-secondary" id="cookbooks-btn">查看更多...</button>
 
-			<p class="text-center font-weight-light font-weight-light hide" id="cookbooks-finish" >没有更多的数据了...</p>
+			<p class="text-center font-weight-light font-weight-light d-none" id="cookbooks-finish" >没有更多的数据了...</p>
 
 		</div>
 </div>
