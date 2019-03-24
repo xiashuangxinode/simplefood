@@ -9,7 +9,7 @@
 			</a>
 			{% endfor %}
 		</ul>
-		<a href="/search.html"><i class="fas fa-search"></i></a>
+		<a href="/search.html" ><i class="fas fa-search"></i></a>
 	</div>
  </div>
 
@@ -20,19 +20,19 @@
 		<a href="javascript: showOrhide('#navMenu');" sf-nav-togger data-target='#navMenu'><i class="fas fa-bars"></i></a>
 	</div> 
 
-	<div id="navMenu" class="px-4 py-4 flex-column align-items-center nav-item text-center text-dark" hide>
+	<div id="navMenu" class="px-4 py-4 flex-column align-items-center nav-item text-center " hide>
 		<div class="d-flex mt-2 justify-content-end">
 			<a href="javascript: showOrhide('#navMenu');"><i class="fas fa-times"></i></a>
 		</div>
 		<ul class="mx-auto my-0 px-0 font-weight-bold">
+			<a href="/search.html" class="d-flex flex-row bd-highlight justify-content-center py-2">
+			<li class="m-3"><i class="fas fa-search mr-3"></i>搜索</li>
+			</a>
 			{% for menu in site.data.menu %}
-			<a href="{{ menu.url}}">
-			<li class="m-3">{{ menu.name }}</li>
+			<a href="{{ menu.url}}" class="d-flex flex-row bd-highlight justify-content-center py-2">
+			<li class="m-3 my-3">{{ menu.name }}</li>
 			</a>
 			{% endfor %}
-			<a href="/search.html">
-			<li class="m-3">SEARCH</li>
-			</a>
 		</ul>
 	</div> 
 </div>
@@ -64,14 +64,14 @@
 			<a href="javascript: showOrhide('#navMenu');"><i class="fas fa-times"></i></a>
 		</div>
 		<ul class="mx-auto my-0 px-0 font-weight-bold">
+			<a href="/search.html" class="d-flex flex-row bd-highlight justify-content-center py-2">
+			<li class="m-3"><i class="fas fa-search mr-3"></i>搜索</li>
+			</a>
 			{% for menu in site.data.menu %}
-			<a href="{{ menu.url}}">
-			<li class="m-3">{{ menu.name }}</li>
+			<a href="{{ menu.url}}" class="d-flex flex-row bd-highlight justify-content-center py-2">
+			<li class="m-3 my-3">{{ menu.name }}</li>
 			</a>
 			{% endfor %}
-			<a href="/search.html">
-			<li class="m-3">SEARCH</li>
-			</a>
 		</ul>
 	</div> 
 </div>

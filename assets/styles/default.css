@@ -23,9 +23,6 @@ body{
 	margin: 0px;
 }
 
-.bg-color{
-
-}
 
 a:link, a:hover, a:active, a:visited{
 	color: #5d5d5d;
@@ -219,6 +216,8 @@ ul{
     min-height: 30rem;
 }
 
+footer{
+}
 
 footer .favicon{
 	width: 6rem;

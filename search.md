@@ -1,8 +1,8 @@
 ---
 layout: simple_default
 ---
-<div class="container">
-	<dir class="row">
+<div class="container-fluid" style="max-width: 40rem">
+	<dir class="row mx-0 px-0">
 		<div class="input-group input-group-lg">
 		  <div class="input-group-prepend">
 		    <span class="input-group-text" id="inputGroup-sizing-lg"><i class="fas fa-search"></i></span>
