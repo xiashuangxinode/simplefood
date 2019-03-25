@@ -9,5 +9,6 @@ layout: simple_search_default
 		  </div>
 		  <input type="text" class="form-control rounded-0 border-left-0 border-right-0 border-top-0 border-bottom" aria-label="Sizing example input" placeholder="输入食谱..." aria-describedby="inputGroup-sizing-lg">
 		</div>
+		<!-- <p>输入想要<h1>查找</h1>的食谱名称进行查找</p> -->
 	</dir>
 </div>

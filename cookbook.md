@@ -1,5 +1,6 @@
 ---
 layout: default
+title: 食谱
 ---
 
 <div class="container-fluid body-lr-p my-5">
