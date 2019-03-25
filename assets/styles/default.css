@@ -1,6 +1,6 @@
 /**{ border: 1px solid red; }*/
 body{
-	font-size: 1.25rem;
+	/*font-size: 1.25rem;*/
 	line-height: 1.725rem;
 	letter-spacing: 0.05rem;
 
@@ -19,6 +19,10 @@ a:link, a:hover, a:active, a:visited{
 
 .favicon{
 	width: 14rem;
+}
+
+.footer .favicon{
+	height: 2.5rem;
 }
 
 .sf-nav-container{
@@ -138,6 +142,16 @@ a:link, a:hover, a:active, a:visited{
     color: #ffffff;
     background-color: #ff674d;
     border-color: #ff674d;
+}
+
+.w-992{
+	width: 992px;
+	max-width: 992px;
+}
+
+.search-icon{
+	border: none;
+	background-color: rgba(0,0,0,0);
 }
 
 @media (max-width: 991.98px){

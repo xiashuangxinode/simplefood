@@ -4,8 +4,13 @@
 	{% include header.html %}
 </head>
 <body class="vh-100">
+
 	{% include navbar.html navModel= "simple"%}
-	{{ content }}
+
+	<div class="container-fluid d-flex justify-content-center">
+		<div class="row px-3 d-flex flex-column">{{ content }}</div>
+	</div>
+
 	{% include footer.html %}
 </body>
 {% include scripts.html %}

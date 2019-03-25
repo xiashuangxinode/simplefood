@@ -1,4 +1,4 @@
-<div class="sf-nav-container h5 animated fadeIn">
+<div class="sf-nav-container h5 animated fadeIn {% if include.navModel == 'simple'%} border-bottom {% endif %}" {% if include.navModel == 'simple_search' or include.navModel == 'simple' %} style="position: relative;" {% endif %}>
 	<div class="sf-nav">
 	 	<div class="sf-nav-conter mx-auto animated fadeIn" id="navbarContent">
 			<div class="text-right d-md-block d-lg-none ">
@@ -7,16 +7,12 @@
 
 			<ul  class="sf-nav-item p-0 d-flex justify-content-center text-uppercase " >
 				
-				<a href="" class="m-0">
+				<a href="/search.html" class="m-0">
 				<li class="mx-2 d-flex justify-content-center flex-row d-md-block d-lg-none">
 					<i class="fas fa-search my-0 mr-2"></i>
 					search
 				</li>
 				</a>
-				<!-- <a href="#" class="m-0"><li class="mx-2">home</li></a>
-				<a href="#" class="m-0"><li class="mx-2">cookbooks</li></a>
-				<a href="#" class="m-0"><li class="mx-2">about us</li></a>
-				<a href="#" class="m-0"><li class="mx-2">contact us</li></a> -->
 				{% for menu in site.data.menu %}
 				<a href="{{ menu.url }}" class="m-0">
 					<li class="mx-2">{{ menu.name }}</li>
@@ -29,7 +25,7 @@
 	 		<img class="favicon" src="/assets/favicon/favicon-black.svg">
 	 	</div>
 		<div class="sf-nav-right ">
-			<a href="javascript:show()"><i class="fas fa-search d-none d-lg-block"></i></a>
+			<a href="/search.html"><i class="fas fa-search d-none d-lg-block"></i></a>
 			<a href="javascript:toggleNavBar('#navbarContent')"><i class="fas fa-bars d-md-block d-lg-none"></i></a>
 		</div> 
 	</div>

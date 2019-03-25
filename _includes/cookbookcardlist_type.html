@@ -1,7 +1,7 @@
 <ul class="row d-flex justify-content-center">
 {% for t in site.data.cookbooktype %}
 	<li class="col-sm-5 col-md-5 col-lg-3 col-xl-3 mx-1 py-3">
-		<a href="">
+		<a href="/cookbooks/category/{{t.name}}">
 			<div class="card rounded-lg">
 			  	<img src="{{ t.image }}" class="card-img" alt="..."> 
 			  	<div class="cookbook-type-mask-text align-items-center d-flex text-white">

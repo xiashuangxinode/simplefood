@@ -1,5 +1,5 @@
 ---
-layout: simple_default
+layout: conter_default
 title: 关于我们
 ---
 
