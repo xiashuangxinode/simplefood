@@ -81,6 +81,10 @@ a:link, a:hover, a:active, a:visited{
 	right: 28px;
 }
 
+.sf-nav-show{
+	display: block;
+}
+
 .sf-banner{
 	background-image: url("/assets/images/sf-banner-16_9-m.jpg");
 	height: 80vh;

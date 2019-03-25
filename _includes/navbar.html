@@ -1,11 +1,11 @@
 <div class="sf-nav-container h5 animated fadeIn">
 	<div class="sf-nav">
-	 	<div class="sf-nav-conter mx-auto">
+	 	<div class="sf-nav-conter mx-auto animated fadeIn" id="navbarContent">
 			<div class="text-right d-md-block d-lg-none ">
-				<a href="#"><i class="fas fa-times"></i></a>
+				<a href="javascript:toggleNavBar('#navbarContent')"><i class="fas fa-times"></i></a>
 			</div> 
 
-			<ul class="sf-nav-item p-0 d-flex justify-content-center text-uppercase" >
+			<ul  class="sf-nav-item p-0 d-flex justify-content-center text-uppercase " >
 				
 				<a href="" class="m-0">
 				<li class="mx-2 d-flex justify-content-center flex-row d-md-block d-lg-none">
@@ -30,7 +30,7 @@
 	 	</div>
 		<div class="sf-nav-right ">
 			<a href="javascript:show()"><i class="fas fa-search d-none d-lg-block"></i></a>
-			<a href="javascript:show()"><i class="fas fa-bars d-md-block d-lg-none"></i></a>
+			<a href="javascript:toggleNavBar('#navbarContent')"><i class="fas fa-bars d-md-block d-lg-none"></i></a>
 		</div> 
 	</div>
 </div> 
