@@ -1,34 +1,33 @@
 ---
 layout: default
 ---
+<dir class="container-fluid px-0 py-5">
+	<div class="row d-flex flex-column justify-content-center mx-0 px-3">
+		<h2 class="m-auto py-2">食谱分类</h2>
+		<p class="m-auto font-weight-normal font-italic h6 py-1">“为了方便找到喜欢的食谱，我们为您将食谱进行了分类”</p>
 
-<div class="container-fluid my-5" >
-	<div class="row pt-5 mx-0 py-3 ">
-		<h2 class="display-5 font-weight-bold col-12 text-center ">食谱分类</h2>
-		<p class="font-italic font-weight-normal col-12 text-center ">“为了方便找到喜欢的食谱，我们为您将食谱进行了分类”</p>
-		{% include cookbookcardlist_type.html %}
-	</div>
-
-	<div class="row separated py-3"><hr></div>
-
-	<div class="row pt-5 mx-0 py-3 ">
-		<h2 class="display-5 font-weight-bold col-12 text-center ">推荐食谱</h2>
-		<p class="font-italic font-weight-normal col-12 text-center ">“为您推荐我们选择的9个优质食谱”</p>
-		{% include foodcardlist_recommended.html %}
-		<div class="col-12 d-flex justify-content-center">
-			<a href="/cookbook.html"><button type="button" class="btn btn-warning text-white text-justify font-weight-bold rounded-pill px-4">查看更多的食谱</button></a>
+		<div class="container-fluid">
+			{% include cookbookcardlist_type.html %}
 		</div>
 	</div>
-	
-	<div class="row separated py-3"><hr></div>	
+	<div class="separated py-3"><hr></div>
 
-	<div class=" py-3  pt-5 my-5 text-white sf-cookbooks__more-bgimg flex-column d-flex align-items-center justify-content-center">
-		<h2 class="display-5 font-weight-bold text-center ">更多食谱</h2>
-		<p class="font-italic font-weight-normal text-center ">“我们为您推荐的还不够？或是没有喜欢的？我们这里还有更多”</p>
-		<div class="d-flex justify-content-center">
-			<a href="/cookbook.html"><button type="button" class="btn btn-warning text-white text-justify font-weight-bold rounded-pill px-4">查看更多的食谱</button></a>
+	<div class="row d-flex flex-column justify-content-center mx-0 px-3">
+		<h2 class="m-auto py-2">推荐食谱</h2>
+		<p class="m-auto font-weight-normal font-italic h6 py-1">“为您推荐我们选择的9个优质食谱”</p>
+
+		<div class="container-fluid">
+			{% include foodcardlist_recommended.html %}
 		</div>
 	</div>
-</div>
+	<div class="separated py-3"><hr></div>
 
-<div class="separated py-3"><hr></div>
+	<div class="row d-flex flex-column justify-content-center mx-0 px-0">
+		<div class="cookbook-type-bg d-flex flex-column text-white justify-content-center align-items-center mx-0 px-3">
+			<h2 class="py-2 font-weight-bold">更多食谱</h2>
+			<p class="font-weight-normal font-italic h6 py-1">“我们为您推荐的还不够？或是没有喜欢的？我们这里还有更多”</p>
+			<a href=""><button type="button" class="btn btn-bg font-weight-bold rounded-pill px-4">查看更多食谱</button></a>
+		</div>
+	</div>
+	<div class="separated py-3"><hr></div>
+</dir>

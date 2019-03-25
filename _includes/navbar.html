@@ -1,78 +1,36 @@
-{% if include.navModel == 'simple' %}
- <div class="sf-simple-nav-container px-5 py-3 d-none d-md-block bg-white">
- 	<div class="sf-nav d-flex align-items-center font-weight-bold text-dark">
-		<a href="#"><img class="sf-nav-favicon" src="/assets/favicon/favicon-black.svg"></a>
-		<ul class="d-flex mx-auto my-0 px-0">
-			{% for menu in site.data.menu %}
-			<a href="{{ menu.url}}">
-			<li class="mx-3">{{ menu.name }}</li>
-			</a>
-			{% endfor %}
-		</ul>
-		<a href="/search.html" ><i class="fas fa-search"></i></a>
-	</div>
- </div>
+<div class="sf-nav-container h5 animated fadeIn">
+	<div class="sf-nav">
+	 	<div class="sf-nav-conter mx-auto">
+			<div class="text-right d-md-block d-lg-none ">
+				<a href="#"><i class="fas fa-times"></i></a>
+			</div> 
 
- <div class="sm-sf-nav-container px-4 py-3 d-sm-block d-md-none h4 border-bottom">
-	<div class="sf-nav d-flex align-items-center font-weight-bold text-dark">
-		<a href="#"><img class="sf-nav-favicon" src="/assets/favicon/favicon-black.svg"></a>
-		<div class="d-flex mx-auto my-0 px-0 ">Simple Food</div>
-		<a href="javascript: showOrhide('#navMenu');" sf-nav-togger data-target='#navMenu'><i class="fas fa-bars"></i></a>
-	</div> 
+			<ul class="sf-nav-item p-0 d-flex justify-content-center text-uppercase" >
+				
+				<a href="" class="m-0">
+				<li class="mx-2 d-flex justify-content-center flex-row d-md-block d-lg-none">
+					<i class="fas fa-search my-0 mr-2"></i>
+					search
+				</li>
+				</a>
+				<!-- <a href="#" class="m-0"><li class="mx-2">home</li></a>
+				<a href="#" class="m-0"><li class="mx-2">cookbooks</li></a>
+				<a href="#" class="m-0"><li class="mx-2">about us</li></a>
+				<a href="#" class="m-0"><li class="mx-2">contact us</li></a> -->
+				{% for menu in site.data.menu %}
+				<a href="{{ menu.url }}" class="m-0">
+					<li class="mx-2">{{ menu.name }}</li>
+				</a>
+				{% endfor %}
+			</ul>
 
-	<div id="navMenu" class="px-4 py-4 flex-column align-items-center nav-item text-center " hide>
-		<div class="d-flex mt-2 justify-content-end">
-			<a href="javascript: showOrhide('#navMenu');"><i class="fas fa-times"></i></a>
-		</div>
-		<ul class="mx-auto my-0 px-0 font-weight-bold">
-			<a href="/search.html" class="d-flex flex-row bd-highlight justify-content-center py-2">
-			<li class="m-3"><i class="fas fa-search mr-3"></i>搜索</li>
-			</a>
-			{% for menu in site.data.menu %}
-			<a href="{{ menu.url}}" class="d-flex flex-row bd-highlight justify-content-center py-2">
-			<li class="m-3 my-3">{{ menu.name }}</li>
-			</a>
-			{% endfor %}
-		</ul>
-	</div> 
-</div>
-{% else %}
-
-<div class=" sf-nav-container px-5 py-3 d-none d-md-block">
-	<div class="sf-nav d-flex align-items-center font-weight-bold">
-		<a href="#"><img class="sf-nav-favicon" src="/assets/favicon/favicon-white.svg"></a>
-		<ul class="d-flex mx-auto my-0 px-0">
-			{% for menu in site.data.menu %}
-			<a href="{{ menu.url}}">
-			<li class="mx-3">{{ menu.name }}</li>
-			</a>
-			{% endfor %}
-		</ul>
-		<a href="/search.html"><i class="fas fa-search"></i></a>
+		</div> 
+	 	<div class="sf-nav-left">
+	 		<img class="favicon" src="/assets/favicon/favicon-black.svg">
+	 	</div>
+		<div class="sf-nav-right ">
+			<a href="javascript:show()"><i class="fas fa-search d-none d-lg-block"></i></a>
+			<a href="javascript:show()"><i class="fas fa-bars d-md-block d-lg-none"></i></a>
+		</div> 
 	</div>
 </div> 
-
-<div class="sm-sf-nav-container sf-nav-container px-4 py-3 d-sm-block d-md-none h4">
-	<div class="sf-nav d-flex align-items-center font-weight-bold">
-		<a href="#"><img class="sf-nav-favicon" src="/assets/favicon/favicon-white.svg"></a>
-		<div class="d-flex mx-auto my-0 px-0 text-white">Simple Food</div>
-		<a href="javascript: showOrhide('#navMenu');" sf-nav-togger data-target='#navMenu'><i class="fas fa-bars"></i></a>
-	</div> 
-
-	<div id="navMenu" class="px-4 py-4 flex-column align-items-center nav-item text-center " hide>
-		<div class="d-flex mt-2 justify-content-end">
-			<a href="javascript: showOrhide('#navMenu');"><i class="fas fa-times"></i></a>
-		</div>
-		<ul class="mx-auto my-0 px-0 font-weight-bold">
-			<a href="/search.html" class="d-flex flex-row bd-highlight justify-content-center py-2">
-			<li class="m-3"><i class="fas fa-search mr-3"></i>搜索</li>
-			</a>
-			{% for menu in site.data.menu %}
-			<a href="{{ menu.url}}" class="d-flex flex-row bd-highlight justify-content-center py-2">
-			<li class="m-3 my-3">{{ menu.name }}</li>
-			</a>
-			{% endfor %}
-		</ul>
-	</div> 
-</div>
-{% endif %}

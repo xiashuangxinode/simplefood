@@ -1,32 +1,10 @@
-*{
-	text-size-adjust: none;
-	-moz-text-size-adjust: none;
-	-webkit-text-size-adjust: none;
-	-webkit-tap-highlight-color: transparent;
-
-	transition-property:color;
-	transition-duration:.35s;
-	-moz-transition-property:color;
-	-moz-transition-duration:.35s;
-	-webkit-transition-property:color;
-	-webkit-transition-duration:.35s;
-	-o-transition-property:color;
-	-o-transition-duration:.35s;
-}
-
+/**{ border: 1px solid red; }*/
 body{
-	font-family: fa5-proxima-nova,"Helvetica Neue",'Roboto', Helvetica, sans-serif;
-	letter-spacing: 0.05rem!important;
-	color: #000000;
-	line-height: 1.75rem!important;
-	padding: 0px;
-	margin: 0px;
-}
+	font-size: 1.25rem;
+	line-height: 1.725rem;
+	letter-spacing: 0.05rem;
 
-
-a:link, a:hover, a:active, a:visited{
-	color: #5d5d5d;
-	text-decoration: none;
+	color: #343434;
 }
 
 ul{
@@ -34,66 +12,13 @@ ul{
 	padding: 0rem!important;
 }
 
-[hide]{
-	display: none;
-	animation: nav-fadein 1.5s 1;
+a:link, a:hover, a:active, a:visited{
+	color: #343434;
+	text-decoration: none;
 }
 
-[show]{
-	display: block;
-	animation: nav-fadein 1.5s 1;
-}
-
-.separated{
-    display: block;
-}
-
-.separated hr{
-	border-top: 1px solid rgba(0,0,0,.05);
-}
-.cookbook-text{
-	z-index: 3000;
-}
-.cookbook-type{
-	position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.35);
-    width: 100%;
-    height: 100%;
-}
-
-/*body{
-	font-size: 18px;
-	line-height: 28px;
-	letter-spacing: .015rem;
-	margin: 0px;
-}*/
-
-@-webkit-keyframes nav-fadein {
-  	0% {
-		opacity: 0; 
-	}
-	33% {
-	  	opacity: 0; 
-	}
-
-	100% {
-		opacity: 1; 
-	} 
-}
-
-@keyframes nav-fadein {
-  	0% {
-		opacity: 0; 
-	}
-	33% {
-	  	opacity: 0; 
-	}
-
-	100% {
-		opacity: 1; 
-	} 
+.favicon{
+	width: 14rem;
 }
 
 .sf-nav-container{
@@ -101,66 +26,20 @@ ul{
 	width: 100%;
 	top: 0px;
 	left: 0px;
-	margin-top: 0;
-    opacity: 1;
-
-	animation: nav-fadein 1.5s 1;
-	transition: opacity ease 300ms;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 20%, transparent 100%);
+	z-index: 3000;
+	background-color: rgba(255,255,255,.9);
 }
-
-.sf-simple-nav-container{
-	/*position: absolute;*/
-	width: 100%;
-	/*top: 0px;
-	left: 0px;*/
-	margin-top: 0;
-    opacity: 1;
-
-	animation: nav-fadein 1.5s 1;
-	/*transition: opacity ease 300ms;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 20%, transparent 100%);*/
-}
-.sm-sf-simple-nav-container{
-
-}
-
-.sm-sf-simple-nav-container .nav-item,
-.sm-sf-nav-container .nav-item{
-	position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: white;
-    z-index: 3001;
-}
-
-.sf-nav-favicon{
-	width: 4rem;
-	height: 4rem;
-}
-
 
 .sf-nav-container .sf-nav{
-    box-sizing: border-box;
-    background-color: rgba(255,255,255,0);
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    font-weight: 500;
-}
-
-.sf-nav-container .sf-nav a:link,
-.sf-nav-container .sf-nav a:hover,
-.sf-nav-container .sf-nav a:active,
-.sf-nav-container .sf-nav a:visited{
-	color: white;
-}
-
-.sf-nav-container .sf-nav ul{
-	list-style: none;
-}
+	height: 76px;
+	padding: 23px 28px;
+	box-sizing: border-box;
+	/*background-color: white;*/
+	display: -webkit-flex;
+	display: -sm-flexbox;
+	display: flex;
+	font-weight: 500;
+} 
 
 .sf-nav-container .sf-nav li{
 	position: relative;
@@ -172,9 +51,9 @@ ul{
     width: 100%;
     height: 2px;
     border-radius: 2px;
-    bottom: -1px;
+    bottom: -5px;
     left: 0;
-    background-color: white;
+    background-color: #343434;
     visibility: hidden;
     -webkit-transform: scale3d(0, 1, 1);
     transform: scale3d(0, 1, 1);
@@ -188,45 +67,98 @@ ul{
             transform: scale3d(1, 1, 1);
 }
 
+.sf-nav-container .sf-nav .sf-nav-left{
+	position: absolute;
+	height: 30px;
+	top: 23px;
+	left: 28px;
+}
+
+.sf-nav-container .sf-nav .sf-nav-right{
+	position: absolute;
+	height: 30px;
+	top: 23px;
+	right: 28px;
+}
+
 .sf-banner{
-	background-image: url('/assets/images/sf-banner-16_9-m.jpg');
-	background-repeat: no-repeat;
-    background-position: 50% 50%;
-    -moz-background-size:cover;
-	background-size:cover;
-	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+	background-image: url("/assets/images/sf-banner-16_9-m.jpg");
 	height: 80vh;
-	min-height: 30rem;
-}
-
-.sf-banner .slogan{
-	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-}
-
-.sf-cookbooks__more-bgimg{
-	background-image: url('/assets/images/sf-cookbooks-2-m.jpg');
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-    -moz-background-size: cover;
+	min-height: 500px;
 	background-size: cover;
-	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
-	height: 80vh;    
-	margin-right: -15px;
-    margin-left: -15px;
-    min-height: 30rem;
 }
 
-footer{
+.separated hr{
+	border-top: 1px solid rgba(0,0,0,.065);
 }
 
-footer .favicon{
-	width: 6rem;
-	height: 6rem;
+.cookbook-type-mask-text{
+	z-index: 2000;
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
 }
 
-footer a:link,
-footer a:hover,
-footer a:active,
-footer a:visited{
-	color: white;
+.cookbook-type-mask-bg{
+	position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.6);
+    height: 100%;
+    width: 100%;
+}
+
+.cookbook-type-bg{
+	background-image: url("/assets/images/sf-cookbooks-2-m.jpg");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 70vh;
+	min-height: 70vh;
+}
+
+.footer{
+	background-color: #383736;
+}
+
+.btn-bg{
+	color: #ffffff;
+    background-color: #ff674d;
+    border-color: #ff674d;
+}
+
+.btn-bg:hover {
+    color: #ffffff;
+    background-color: #ff674d;
+    border-color: #ff674d;
+}
+
+@media (max-width: 991.98px){
+	.sf-nav-conter{
+		position: fixed;
+	    left: 0;
+	    top: 0;
+	    background-color: white;
+	    width: 100%;
+	    height: 100vh;
+		padding-top: 1.25rem;
+		padding-bottom: 1.25rem;
+	    padding-left: 1.85rem;
+	    padding-right: 1.85rem;
+	    z-index: 2050;
+	    display: none;
+	}
+
+	.sf-nav-conter .sf-nav-item {
+		flex-flow: column;
+    	align-items: center;
+	}
+
+	.sf-nav-conter .sf-nav-item *{
+		margin-top: .85rem;
+    	margin-bottom: .85rem;
+	}
 }
