@@ -1,15 +1,15 @@
 ---
-layout: default
+layout: simple_default
 title: 食谱
 ---
 
-<div class="container-fluid body-lr-p my-5">
-	<ul class="row mx-0">
+<div class="container-fluid">
+	<ul class="row">
 		{% for t in site.data.cookbooktype %}
 		{% assign cookbook = site.categories.[t.name] %}
 		{% if cookbook != nil %}
-		<li class="col-12 my-3">
-			<div class="border-bottom py-4  d-flex justify-content-between">
+		<li class="col-12 px-0">
+			<div class="border-bottom py-2  d-flex justify-content-between">
 				<h3 class="my-1">{{ t.name }}</h3>
 				<a class="font-weight-light my-1" href="{{ t.url }}">更多</a>
 			</div>

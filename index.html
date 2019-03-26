@@ -17,9 +17,13 @@ title: 首页
 		<h2 class="m-auto py-2 px-3">推荐食谱</h2>
 		<p class="m-auto font-weight-normal font-italic h6 py-1 px-3">“为您推荐我们选择的9个优质食谱”</p>
 
-		<div class="container-fluid">
+		<div class="container-fluid d-flex flex-column justify-content-center">
 			{% include foodcardlist_recommended.html %}
+			
 		</div>
+
+		<a href="/cookbook.html" class="m-auto"><button type="button" class="btn btn-bg font-weight-bold rounded-pill px-4 ">查看更多食谱</button></a>
+
 	</div>
 	<div class="separated py-3"><hr></div>
 
@@ -27,7 +31,7 @@ title: 首页
 		<div class="cookbook-type-bg d-flex flex-column text-white justify-content-center align-items-center mx-0 px-3">
 			<h2 class="py-2 font-weight-bold">更多食谱</h2>
 			<p class="font-weight-normal font-italic h6 py-1">“我们为您推荐的还不够？或是没有喜欢的？我们这里还有更多”</p>
-			<a href=""><button type="button" class="btn btn-bg font-weight-bold rounded-pill px-4">查看更多食谱</button></a>
+			<a href="/cookbook.html"><button type="button" class="btn btn-bg font-weight-bold rounded-pill px-4">查看更多食谱</button></a>
 		</div>
 	</div>
 	<div class="separated py-3"><hr></div>

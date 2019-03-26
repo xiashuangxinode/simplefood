@@ -7,7 +7,7 @@
 	{% include navbar.html navModel= "simple" %}
 	<div class="container-fluid ">
 		<div class="row d-flex justify-content-center">
-			<div class="card col-sm-12 col-md-12 col-lg-11 col-xl-11 border-0  w-992">
+			<div class="card col-sm-12 col-md-12 col-lg-11 col-xl-11 border-0  w-1200">
 
 				{% if page.image != nil %}
 			      <img src="{{ page.image }}" class="card-img-top" alt="...">
@@ -28,7 +28,6 @@
 			        </ul></small>
 			        </div>
 
-
 			        <div class="card-text my-5 font-weight-light">
 			        	{{ content }}
 			        </div>
@@ -38,7 +37,7 @@
 					        	<a href=""><li class="pr-3"> <i class="fab fa-facebook"></i> </li></a> 
 					        	<a href=""><li class="px-3"> <i class="fab fa-instagram"></i> </li></a>
 					        	<a href=""><li class="px-3"> <i class="fas fa-link"></i></li></a>
-					        	<a href=""><li class="px-3"> <i class="fas fa-print"></i></li></a>
+					        	<!-- <a href="javascript:printCookbookToPdf();"><li class="px-3"> <i class="fas fa-print"></i></li></a> -->
 					        </ul>
 			        </div>
 			        
