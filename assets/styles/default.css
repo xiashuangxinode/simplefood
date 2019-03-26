@@ -188,6 +188,12 @@ a:link, a:hover, a:active, a:visited{
 	background-color: rgba(0,0,0,0);
 }
 
+.contact-us-mail{
+	border-left: 1px solid #494c4f;
+	margin-left: 2rem;
+	padding-left: 2rem;
+}
+
 @media (max-width: 991.98px){
 	.max-width{
 		/*width: calc(100% - 95px);
@@ -231,5 +237,14 @@ a:link, a:hover, a:active, a:visited{
 
 	.sf-nav-container .sf-nav .sf-nav-right{
 		right: 15px;
+	}
+
+	.contact-us-mail {
+	    border-left: none;
+	    margin-left: 0;
+	    border-top: 1px solid #494c4f;
+	    margin-top: 2rem;
+	    padding-top: 2rem;
+	    padding-bottom: 2rem;
 	}
 }

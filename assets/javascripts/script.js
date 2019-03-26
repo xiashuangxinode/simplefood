@@ -252,4 +252,86 @@
 
 }
 
+
+
+	window.search = {
+
+		search_sort_select : function(){
+
+		},
+
+		search_cookbook : function(text){
+
+		}
+	}
+
+
+	window.addcontactmessage =function(){
+		var name = $("#contact-name").val();
+		var mail = $("#contact-mail").val();
+		var subject = $("#contact-subject").val();
+		var message = $("#contact-message").val();
+
+		var db = new DataBase.init();
+
+		db.setData("name",name);
+		db.setData("email",mail);
+		db.setData("subject",subject);
+		db.setData("message",message);
+
+		db.save();
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	window.DataBase = {
+
+		_appkey: "176d30454d02853542444b5911faba00",
+		_resdapikey: "87e18d3f203e184afd6d0928178112f8",
+
+		_bmob: null,
+
+		_data: new Array(),
+		__struct__: function(key,value){
+	        this.key = key;
+	        this.value = value;
+	    },
+
+		init: function(){
+			this._bmob =  Bmob.initialize(this._appkey, this._resdapikey);
+			return DataBase;
+		},
+
+		save: function(){
+			const query = Bmob.Query('t_contact');
+			for(var i = 0; i < this._data.length; i++ ){
+				var data = this._data[i];
+				console.log(data.key,data.value)
+				query.set(data.key,data.value);
+			}
+
+			query.save().then(function(res) {
+			  console.log(res)
+			}).catch(function(err) {
+			  console.log(err)
+			})
+		},
+
+		setData: function(k,v){
+			this._data[this._data.length] = new this.__struct__(k,v);
+		}
+	}
+
 })(window);
