@@ -267,19 +267,44 @@
 
 
 	window.addcontactmessage =function(){
+		Bmob.initialize("176d30454d02853542444b5911faba00","87e18d3f203e184afd6d0928178112f8");
 		var name = $("#contact-name").val();
 		var mail = $("#contact-mail").val();
 		var subject = $("#contact-subject").val();
 		var message = $("#contact-message").val();
 
-		var db = new DataBase.init();
+		/*var db = new DataBase.init();*/
 
-		db.setData("name",name);
-		db.setData("email",mail);
-		db.setData("subject",subject);
-		db.setData("message",message);
+		var query = Bmob.Query("t_contact");
 
-		db.save();
+		query.set("name",name);
+		query.set("email",mail);
+		query.set("subject",subject);
+		query.set("message",message);
+
+		query.save().then( function(res){
+			console.log('add success')
+			$("#contact-name").val("");
+			$("#contact-mail").val("");
+			$("#contact-subject").val("");
+			$("#contact-message").val("");
+
+		$('#alert').html('<div class="alert alert-success" role="alert">成功，您的信息已经收到。 感谢您对SimpleFood的关注。</div>');
+		} ).catch(function(error){
+			console.error(error);
+		});
+
+		return false;
+/*
+		Bmob.initialize("176d30454d02853542444b5911faba00","87e18d3f203e184afd6d0928178112f8");
+
+		var q1 = Bmob.Query('t_contact')
+		q1.get('LAzw000I').then(function(red){console.log(res)})
+
+		var q = Bmob.Query('Contact')
+		q.set("name",'sssssdfasfae')
+		q.save().then(function(res){console.log(res)})
+		return false;*/
 	}
 
 
