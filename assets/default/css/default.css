@@ -19,6 +19,8 @@
 	-webkit-transition-duration:.35s;
 	-o-transition-property:color;
 	-o-transition-duration:.35s;
+
+	-webkit-appearance: none;
 }
 
 body{
