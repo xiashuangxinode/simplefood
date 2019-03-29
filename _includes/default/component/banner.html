@@ -1,0 +1,20 @@
+<div class="sf-banner">
+	<div class="sf-page-banner-title sf-py main-px">
+		{% if include.parent == 'post' %}
+		<style type="text/css">.sf-banner{background-image: url('{{page.image}}');}</style>
+		<h1 ng-bind-html="'{{ page.title }}' | translate">  </h1>
+		<p class="font-weight-normal">{{ page.excerpt }}</p>
+		<p>
+			
+			<ul class="sf-cookbook-mate">
+				<li class="sf-cookbook-mate-item"><small>{{ page.servings }}<span class="sf-cookbook-mate-unit text-uppercase" data-ng-bind-html="'servings' | translate"></span></small></li>
+				<li class="sf-cookbook-mate-item"><small>{{ page.minute }}<span class="sf-cookbook-mate-unit text-uppercase" data-ng-bind-html="'minute' | translate"></span></small></li>
+				<li class="sf-cookbook-mate-item"><small>{{ page.kcal }}<span class="sf-cookbook-mate-unit text-uppercase" data-ng-bind-html="'kcal' | translate"></span></small></li>
+			</ul>
+			
+		</p>
+		{% else %}
+		<h1 class="text-uppercase" data-ng-bind-html="'{{ page.i18n_title }}' | translate">  </h1>
+		{% endif %}
+	</div>
+</div>

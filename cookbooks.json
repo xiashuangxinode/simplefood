@@ -1,4 +1,0 @@
----
-layout: null
----
-[{% for cookbook in site.posts %} { {% for cbparam in cookbook %} {% if cbparam == 'content' or cbparam == 'previous' or cbparam == 'next' or cbparam == 'output' or cbparam == 'nutritionalInfo' %} {% continue %} {% endif %}  "{{ cbparam }}" : "{{ cookbook[cbparam] }}" {% if forloop.last == false %},{% endif %} {% endfor %} } {% if forloop.last == false %},{% endif %}  {% endfor %}]

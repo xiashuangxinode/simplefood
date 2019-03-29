@@ -1,0 +1,48 @@
+<div class="main-body">
+	<div class="sf-py section">
+		<div class="section-header">
+			<h2 class="section-title line-b text-center" data-ng-bind-html="'ourNewestRecipes' | translate"></h2>
+		</div>
+		<div class="section-body sf-container-fluid">
+
+			<ul class="sf-row">
+				{% for cookbook in site.posts %}
+				<li class="col-xm-12 col-md-6 col-lg-3 col-xl-3 sf-mb">{% include {{ site.simple_food.theme}}/component/cookbookcard.html %}</li>
+				{% endfor %}
+			</ul> 
+		</div>
+
+		<div class="col-12 text-center"><a href="#"><span data-ng-bind-html="'seeMore' | translate"></span></a></div>
+	</div>
+
+	<div class="sf-py section">
+		<div class="section-header">
+			<h2 class="section-title line-b text-center" data-ng-bind-html="'popularRecipes' | translate"></h2>
+		</div>
+		<div class="section-body">
+			
+			<ul class="sf-row">
+				{% for cookbook in site.posts %}
+				<li class="col-xm-12 col-md-6 col-lg-3 col-xl-3 sf-mb">{% include {{ site.simple_food.theme}}/component/cookbookcard.html %}</li>
+				{% endfor %}
+			</ul> 
+		</div>
+		<div class="col-12 text-center"><a href="#"><span data-ng-bind-html="'seeMore' | translate"></span></a></div>
+	</div>
+
+	<div class="sf-py section">
+		<div class="section-header">
+			<h2 class="section-title line-b text-center" data-ng-bind-html="'recommendRecipes' | translate"></h2>
+		</div>
+		<div class="section-body">
+
+			<ul class="sf-row">
+				{% for cookbook in site.posts %}
+				<li class="col-xm-12 col-md-6 col-lg-3 col-xl-3 sf-mb">{% include {{ site.simple_food.theme}}/component/cookbookcard.html %}</li>
+				{% endfor %}
+			</ul> 
+		</div>
+		<div class="col-12 text-center"><a href="#"><span data-ng-bind-html="'seeMore' | translate"></span></a></div>
+	</div>
+</div>
+

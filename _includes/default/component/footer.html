@@ -1,0 +1,22 @@
+<div class="footer font-weight-normal main-px" data-ng-controller="Footer as footer">
+
+	<div class="footer-links">
+		<img src="/assets/favicon/favicon.svg" alt="SimpleFood" width="150">
+		<div class="links-container">
+			<ul class="w-100 links-nav">
+				<li class="nav-link"><i class="fab fa-facebook-square"></i></li>
+				<li class="nav-link"><i class="fab fa-twitter-square"></i></li>
+				<li class="nav-link"><i class="fab fa-pinterest-square"></i></li>
+				<li class="nav-link"><i class="fab fa-tumblr-square"></i></li>
+				<li class="nav-link"><i class="fab fa-instagram"></i></li>
+			</ul>
+			<select class="language-select" data-ng-model="selectlanguage.language" data-ng-controller="SelectLanguage as selectlanguage" data-ng-options="value.code as value.label for (key , value) in selectlanguage.languages" data-ng-change="selectlanguage.selectLanguage(selectlanguage.language)">
+			</select>
+		</div>
+	</div>
+
+	<div class="font-weight-normal text-center">
+	<span  ng-bind-html="'copyright' | translate"></span>
+	</div>
+	
+</div>

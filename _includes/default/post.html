@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html data-ng-app='simpleFood' data-ng-controller='Application as app'>
+<head>
+	{% include {{ site.simple_food.theme}}/component/header.html %}
+</head>
+<body >
+	<div>
+		{% include {{ site.simple_food.theme}}/component/navbar.html %}
+		{% include {{ site.simple_food.theme}}/component/banner.html parent='post' %}
+		<div class="main-px sf-py">{{ content }}</div>
+		{% include {{ site.simple_food.theme}}/component/footer.html %}
+	</div>
+{% include {{ site.simple_food.theme}}/component/scripts.html %}
+</body>
+</html>

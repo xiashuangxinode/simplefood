@@ -1,0 +1,34 @@
+<div class="sf-header w-100" data-ng-controller="Navbar as navbar">
+	<div class="sf-nav">
+		<div class=" d-md-block d-lg-none sf-nav-bar-icon sf-nav-px" data-ng-click='navbar.toggleNavbar()'>
+			<i class="fas fa-bars"></i>
+		</div>
+
+		<div class="sf-nav-left sf-nav-py sf-nav-px">
+			
+			<div class="mobile-favicon">
+			<a href="/index.html"><img src="/assets/favicon/favicon.svg" alt="SimpleFood" width="150"></a>
+			</div>
+		</div>
+		<div class="sf-nav-conter w-100 sf-nav-py d-lg-flex {% raw %}{{ navbar.navbar_hide }}{% endraw %}">
+			<ul class="sf-nav-item text-uppercase">
+				<li class="d-md-block d-lg-none main-px sf-nav-bar-close" >
+					<i class="fas fa-times" data-ng-click='navbar.toggleNavbar()'></i>
+				</li>
+				{% for m in site.data.menu %}
+				<a href="{{ m.url }}"><li class="sf-nav-link" data-ng-bind-html="'{{ m.name }}' | translate"></li></a>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="sf-nav-right sf-nav-py sf-nav-px">
+			<a href="#" data-ng-click='navbar.searchContainer()'><i class="fas fa-search" ></i></a>
+		</div>
+	</div>
+
+	<div class="sf-tips" data-ng-hide="{{show}}"><small> <span  data-ng-bind-html="'cookieStatementTips' | translate"></span><a href="#"><span  data-ng-bind-html="'cookieStatementTipsClose' | translate"></span></a> </small></div>
+
+	<div class="sf-search-container d-none" data-ng-hide="{{navbar.searchHide}}">
+		<div class="sf-search-close"></div>
+		<div class="sf-search-body"></div>
+	</div>
+</div>

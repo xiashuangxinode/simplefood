@@ -1,0 +1,26 @@
+{
+	"home": "home",
+	"cookbooks": "cookbooks",
+	"aboutus": "about us",
+	"contactus": "contact us",
+
+	"page_home": "Simple Food",
+	"page_cookbooks": "Cook Bookds",
+	"page_aboutus": "About US",
+	"page_contactus": "Contact US",
+
+	"ourNewestRecipes": "Our Newest Recipes",
+	"popularRecipes": "Popular recipes",
+	"recommendRecipes": "Recommend Recipes",
+
+	"seeMore": "See More",
+
+	"kcal": "Kcal",
+	"minute": "Minute",
+	"servings": "Servings",
+
+	"cookieStatementTips": "This website uses cookies for storing information on your computer. These cookies can make the website work and help us improve the user experience. By using this website, you accept the placement of these cookies.",
+	"cookieStatementTipsClose": "I know",
+
+	"copyright": "© 2019. SimpleFood. All rights reserved. By using or registering in any part of this website, we accept our User Agreement and Privacy Policy and Cookie Statement. You may not copy, distribute, transmit, cache, or otherwise use the content of this website for commercial purposes unless you have permission from Simple Food."
+}

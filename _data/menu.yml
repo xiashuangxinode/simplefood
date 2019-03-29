@@ -1,57 +1,12 @@
-# - name: HOME
-#   url: /index.html
 
-# - name: MENU
-
-# - name: ABOUTUS
-
-# - name: CONTACT
-
-
-- name: 首页
+- name: home
   url: /index.html
 
-- name: 菜谱
-  url: /cookbook.html
-  items:
-    - name: 早餐
-      url:
+- name: cookbooks
+  url: /cookbooks.html
 
-    - name: 小吃
-      url:
-
-    - name: 主菜
-      url:
-
-    - name: 配菜
-      url:
-
-    - name: 汤类
-      url:
-
-    - name: 酱汁
-      url:   
-  
-
-
-
-
-- name: 关于我们
+- name: aboutus
   url: /aboutus.html
 
-- name: 联系我们
+- name: contactus
   url: /contact.html
-
-
-
-# - name: 早餐
-
-# - name: 小吃
-
-# - name: 主菜
-
-# - name: 配菜
-
-# - name: 汤类
-
-# - name: 酱汁
