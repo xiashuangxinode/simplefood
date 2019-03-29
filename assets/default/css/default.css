@@ -71,6 +71,7 @@ ul{
     animation: flipOutX 2.5s;
     display: block !important;
 }
+
 .sf-header{
 	position: fixed;
     left: 0;
@@ -347,7 +348,8 @@ ul{
 	.sf-nav-conter{
 		position: absolute;
 		top: 0;
-		left: 0;
+		/*left: 0;*/
+		left: -100%;
 		color: #343434;
 		background-color: white;
 		z-index: 2050;
@@ -357,11 +359,19 @@ ul{
     	display: initial!important;*/
 	}
 
+	.sf-nav-conter-show{
+		left: 0;
+	}
+
 	.sf-nav-conter .sf-nav-item{
 		flex-wrap: wrap;
 	    flex-flow: column;
 	    text-align: center;
 	    width: 100%;
+	}
+
+	.sf-nav-conter ul a:last-child {
+	    padding-right: 2rem!important;
 	}
 
 	.sf-nav-conter ul a{

@@ -17,9 +17,7 @@
 		this.searchHide = true;
 		this.searchContainer = function(){
 			this.searchHide = !this.searchHide;
-			console.log(this.searchHide)
 		}
-
 	});
 	app.controller('Footer', function(){
 
@@ -29,12 +27,11 @@
 		this.navbar_hide = "d-none";
 		this.show = false;
 		this.toggleNavbar = function(){
-			console.log(this.show)
 			if(this.show){
 				this.navbar_hide="d-none";
 				this.show=false;
 			}else{
-				this.navbar_hide="";
+				this.navbar_hide="sf-nav-conter-show";
 				this.show=true;
 			}
 		}

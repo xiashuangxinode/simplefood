@@ -1,4 +1,4 @@
-<div class="sf-search-container main-px" data-ng-model="app.searchHide" data-ng-hide="app.searchHide">
+<div class="sf-search-container main-px d-none" data-ng-model="app.searchHide" data-ng-hide="app.searchHide">
 	<div class="sf-search-container__close main" ><i class="fas fa-times" data-ng-click='app.searchContainer()'></i></div>
 	<div class="sf-search-body">
 		<input type="text" class="form-control form-control-lg" id="searchText" placeholder="{% raw %}{{ 'searchplaceholder' | translate }}{% endraw %}">
@@ -33,6 +33,4 @@
 	</div>
 
 	<div class="sf-tips" data-ng-hide="{{show}}"><small> <span  data-ng-bind-html="'cookieStatementTips' | translate"></span><a href="#"><span  data-ng-bind-html="'cookieStatementTipsClose' | translate"></span></a> </small></div>
-
-	
 </div>
