@@ -1,5 +1,5 @@
 *{
-		-moz-font-smoothing: antialiased；
+	-moz-font-smoothing: antialiased；
 	-o-font-smoothing: antialiased；
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -66,7 +66,11 @@ ul{
     margin-left: -15px;
     margin-right: -15px;
 }
-
+.ng-hide-add {
+    -webkit-animation: flipOutX 2.5s;
+    animation: flipOutX 2.5s;
+    display: block !important;
+}
 .sf-header{
 	position: fixed;
     left: 0;
@@ -138,7 +142,7 @@ ul{
 	padding-bottom: 2.25rem!important;	
 }
 .sf-pt{
-padding-top: 2.25rem!important;
+	padding-top: 2.25rem!important;
 	
 }
 .sf-nav{
@@ -184,7 +188,7 @@ padding-top: 2.25rem!important;
 .sf-banner{
 	background-image: url('/assets/images/sf-banner-16_9-m.jpg');
 	background-repeat: no-repeat;
-	background-position: auto;
+	background-position: 50% 50%;
 	background-size: cover;
 	height: 90vh;
 	min-height: 600px;
@@ -218,14 +222,10 @@ padding-top: 2.25rem!important;
 	flex-wrap: wrap;
 }
 
-/*.line{
-	display: inline-block;
-    position: relative;
-}
-*/
 .line-b{
 	position: relative;	
 }
+
 .line-b:before{
 	content: "";
     height: 2px;
@@ -235,30 +235,11 @@ padding-top: 2.25rem!important;
     bottom: -10px;
     background-color: #343434;
 }
+
 .section-header{
 	width: 100%;
 }
-/*.section-header h2:after{
-	content: "";
-    position: absolute;
-    border-top: 2px solid #ccc;
-    width: 25rem;
-    height: 2px;
-    display: block;
-    right: -25.375rem;
-    top: 54%;
-}
-.section-header h2:before{
-    content: "";
-    position: absolute;
-    border-top: 2px solid #ccc;
-    width: 25rem;
-    height: 2px;
-    display: block;
-    left: -25.375rem;
-    top: 54%;
-}
-*/
+
 .section-body{
 	margin-top: 1.25rem!important;
 	width: 100%;
@@ -296,6 +277,10 @@ padding-top: 2.25rem!important;
 	flex-shrink: 1;
 	cursor: pointer;
 	height: 36px;
+}
+
+.footer .language-select option{
+	text-align: right;
 }
 
 .sf-card{
