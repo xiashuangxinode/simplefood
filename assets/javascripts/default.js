@@ -17,6 +17,23 @@
 		this.searchHide = true;
 		this.searchContainer = function(){
 			this.searchHide = !this.searchHide;
+
+			if(!this.searchHide){
+				this.searchContainerCls = "sf-search-container__show";
+			}else{
+				this.searchContainerCls = null;
+			}
+		}
+
+		this.searchContainerGo = function(e){
+			var keycode = window.event?e.keyCode:e.which;
+            if(keycode==13){
+
+            }
+		}
+
+		this._search_cookbook = function(){
+
 		}
 	});
 	app.controller('Footer', function(){
@@ -39,7 +56,6 @@
 		
 	});
 
-
 	app.controller('SelectLanguage', ['$translate',function($translate){
 		var defaultLanguage = window.sessionStorage.getItem(languageKEY) || 'zh-CN';
 		this.language = defaultLanguage;
@@ -60,7 +76,6 @@
 			location.reload();
 		}
 	}]);
-
 
 })(window);
 
