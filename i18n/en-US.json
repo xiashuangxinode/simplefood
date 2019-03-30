@@ -5,7 +5,7 @@
 	"contactus": "contact us",
 
 	"page_home": "Simple Food",
-	"page_cookbooks": "Cook Bookds",
+	"page_cookbooks": "Cook Books",
 	"page_aboutus": "About US",
 	"page_contactus": "Contact US",
 
@@ -18,6 +18,13 @@
 	"kcal": "Kcal",
 	"minute": "Minute",
 	"servings": "Servings",
+
+	"breakfast": "Breakfast",
+	"snack": "Snack",
+	"mainCourse": "Main Course",
+	"sideDish": "Side Dish",
+	"soup": "Soup",
+	"sauce": "Sauce",
 
 	"cookieStatementTips": "This website uses cookies for storing information on your computer. These cookies can make the website work and help us improve the user experience. By using this website, you accept the placement of these cookies.",
 	"cookieStatementTipsClose": "I know",

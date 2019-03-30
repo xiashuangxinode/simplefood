@@ -1,0 +1,38 @@
+- name: 早餐
+  i18n_name: breakfast
+  node:
+  url: /cookbooks/category/早餐/
+  image: https://gitee.com/xiashuangxi/sf/raw/master/images/sft/zc.png
+
+- name: 小吃
+  i18n_name: snack
+  node:
+  url: /cookbooks/category/小吃/
+  image: https://gitee.com/xiashuangxi/sf/raw/master/images/sft/xc.png
+
+- name: 主菜
+  i18n_name: mainCourse
+  node:
+  url: /cookbooks/category/主菜/
+  image: https://gitee.com/xiashuangxi/sf/raw/master/images/sft/zc-main.png
+
+- name: 配菜
+  i18n_name: sideDish
+  node:
+  url: /cookbooks/category/配菜/
+  image: https://gitee.com/xiashuangxi/sf/raw/master/images/sft/pc.png
+
+- name: 汤类
+  i18n_name: soup
+  node:
+  url: /cookbooks/category/汤类/
+  image: https://gitee.com/xiashuangxi/sf/raw/master/images/sft/tl.png
+
+- name: 酱汁
+  i18n_name: sauce
+  node:
+  url: /cookbooks/category/酱汁/
+  image: https://gitee.com/xiashuangxi/sf/raw/master/images/sft/jz.png
+
+
+    
