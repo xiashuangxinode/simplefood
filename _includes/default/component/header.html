@@ -11,7 +11,7 @@ Simple Food
 {{page.title}} - Simple Food
 {% endif %}
 </title>
-<meta name="description" content="{% if page.excerpt != nil %}{{ page.excerpt}} - {% endif %}{{ site.simple_food.description }}"/>
+<meta name="description" content="{% if page.excerpt != nil %}{{ page.excerpt}}{% else %}{{ site.simple_food.description }}{% endif %}"/>
 <meta name="keywords" content="Food,cookbooks,Chinese Food,delicacy,中国菜,中餐,菜谱,美食">
 <meta name="author" content="Simple Food">
 

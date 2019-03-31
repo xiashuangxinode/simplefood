@@ -29,6 +29,12 @@
 	"sauce": "醬汁",
 
 	"searchBtnLabel": "查詢",
+
+	"404error": {
+		"title": "別哭！",
+		"info": "您要查找的頁面不在此外，請點擊我們的<a href='/index.html'>主頁</a>,了解一些美食食譜。"
+	},
+	
 	
 
 	"cookieStatementTips": "本網站使用cookie，用於在您的電腦中儲存信息。這些cookie可以使網站正常運行，以及幫助我們改進用戶體驗。使用本網站，即表示您接受放置這些cookie。",

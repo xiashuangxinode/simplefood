@@ -94,6 +94,10 @@ ul{
     display: none;
 }
 
+.prompt a{
+	text-decoration: underline;
+}
+
 .sf-tips a{
 	color: white;
 	text-decoration: underline;

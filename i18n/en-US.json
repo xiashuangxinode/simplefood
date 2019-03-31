@@ -29,6 +29,11 @@
 
 	"searchBtnLabel": "Search",
 
+	"404error": {
+		"title": "Don't cry!",
+		"info": "The page you are looking for is not available. Please click on our <a href='/index.html'>home page</a> for some gourmet recipes."
+	},
+
 	"cookieStatementTips": "This website uses cookies for storing information on your computer. These cookies can make the website work and help us improve the user experience. By using this website, you accept the placement of these cookies.",
 	"cookieStatementTipsClose": "I know",
 
