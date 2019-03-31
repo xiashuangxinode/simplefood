@@ -11,7 +11,7 @@ Simple Food
 {{page.title}} - Simple Food
 {% endif %}
 </title>
-<meta name="description" content="这是一个关注于分享简单，健康，美味的食谱网站。这里包含了早餐，小吃，主菜，配菜，汤类，酱汁各种制作方法与技巧。"/>
+<meta name="description" content="{% if page.excerpt != nil %}{{ page.excerpt}} - {% endif %}{{ site.simple_food.description }}"/>
 <meta name="keywords" content="Food,cookbooks,Chinese Food,delicacy,中国菜,中餐,菜谱,美食">
 <meta name="author" content="Simple Food">
 
