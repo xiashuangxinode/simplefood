@@ -109,7 +109,7 @@
 			});
 		}
 		let param_v = $.url(window.location.href).param('t');
-		if( param_v.trim().lnegth > 0 && param_v !== undefined){
+		if(  param_v !== undefined && param_v.trim().lnegth > 0) {
 			this.fetch(param_v);
 		}
 		
