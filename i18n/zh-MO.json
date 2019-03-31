@@ -1,0 +1,40 @@
+{
+	"home": "首頁",
+	"cookbooks": "食譜",
+	"aboutus": "關於我們",
+	"contactus": "聯繫我們",
+
+	"page_home": "Simple Food",
+	"page_cookbooks": "食譜",
+	"page_aboutus": "關於我們",
+	"page_contactus": "聯繫我們",
+
+	"ourNewestRecipes": "新添加的食譜",
+	"popularRecipes": "熱門食譜",
+	"recommendRecipes": "推薦食譜",
+
+	"seeMore": "查看更多",
+
+	"kcal": "千卡",
+	"minute": "分鐘",
+	"servings": "人份",
+
+	
+	"breakfast": "早餐",
+	"snack": "小吃",
+	"mainCourse": "主菜",
+	"sideDish": "配菜",
+	"soup": "湯類",
+	"sauce": "醬汁",
+
+	"searchBtnLabel": "查詢",
+	
+
+	"cookieStatementTips": "本網站使用cookie，用於在您的電腦中儲存信息。這些cookie可以使網站正常運行，以及幫助我們改進用戶體驗。使用本網站，即表示您接受放置這些cookie。",
+	"cookieStatementTipsClose": "我知道了",
+
+	"searchplaceholder": "查找一個食譜",
+
+
+	"copyright": "© 2019. SimpleFood版權所有.在本網站上任何部分使用或註冊即表示接受我們的用戶協議和隱私政策及Cookie聲明。除非得到Simple Food的許可，否則不得複製、分發、傳輸、緩存或以其它方式使用本網站的上內容進行商業用途。"
+}

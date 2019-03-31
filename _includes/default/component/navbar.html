@@ -1,7 +1,7 @@
 <div class="sf-search-container main-px d-none {% raw %}{{app.searchContainerCls}}{% endraw %}" data-ng-model="app.searchHide" data-ng-hide="app.searchHide">
 	<div class="sf-search-container__close main" ><i class="fas fa-times" data-ng-click='app.searchContainer()'></i></div>
 	<div class="sf-search__body">
-		<input type="text" class="form-control form-control-lg" id="searchText" placeholder="{% raw %}{{ 'searchplaceholder' | translate }}{% endraw %}" data-ng-keyup="app.searchContainerGo($event)" data-ng-model="app.searchText">
+		<input type="text" class="form-control form-control-lg sf-search__text" id="searchText" placeholder="{% raw %}{{ 'searchplaceholder' | translate }}{% endraw %}" data-ng-keyup="app.searchContainerGo($event)" data-ng-model="app.searchText">
 	</div>
 </div>
 

@@ -1,7 +1,8 @@
 <div data-ng-controller="SearchPage as searchpage">
 	<div>
-		<div>
-			<input type="text" class="form-control form-control-lg" id="searchText" placeholder="{% raw %}{{ 'searchplaceholder' | translate }}{% endraw %}" data-ng-keyup="app.searchContainerGo($event)" data-ng-model="app.searchText">
+		<div class="d-flex">
+			<input type="text" class="form-control form-control-lg sf-search__text" id="searchText" placeholder="{% raw %}{{ 'searchplaceholder' | translate }}{% endraw %}" data-ng-keyup="app.searchContainerGo($event)" data-ng-model="app.searchText">
+			<button type="button" class="btn btn-dark rounded-0 ml-3 sf-search__btn" data-ng-bind-html="'searchBtnLabel' | translate"></button>
 		</div>
 	</div>
 
@@ -18,7 +19,7 @@
 						<img class="sf-card-image-top" src="/assets/images/sf-banner-16_9-m.jpg">
 						<div class="sf-card-container">
 							<div class="sf-card-header">
-								<a href="{{cookbook.url}}"><h5 data-ng-bind-html="cookbook.title"></h5></a>
+								<a href="{% raw %}{{cookbook.url}}{% endraw %}"><h5 data-ng-bind-html="cookbook.title"></h5></a>
 							</div>
 							<div class="sf-card-body">
 								<p data-ng-bind-html="cookbook.excerpt"></p>
