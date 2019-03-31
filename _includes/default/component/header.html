@@ -4,7 +4,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>
+{% if page.title == nil %}
+Simple Food
+{% else %}
+{{page.title}} - Simple Food
+{% endif %}
+</title>
+<meta name="description" content="这是一个关注于分享简单，健康，美味的食谱网站。这里包含了早餐，小吃，主菜，配菜，汤类，酱汁各种制作方法与技巧。"/>
+<meta name="keywords" content="Food,cookbooks,Chinese Food,delicacy,中国菜,中餐,菜谱,美食">
+<meta name="author" content="Simple Food">
 
+<meta name="google" content="nositelinkssearchbox" />
+{% include {{ site.simple_food.theme}}/component/opengraph.html %}
 
 <link rel="shortcut icon" type="image/ico" href="/assets/favicon/favicon.ico" />
 
