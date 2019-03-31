@@ -16,7 +16,7 @@
 				<li  class="col-xm-12 col-md-6 col-lg-3 col-xl-3 sf-mb">
 					<div class="sf-card">
 						<div class="sf-card-tips"><a href="#" data-ng-bind-html="cookbook.category"></a></div>
-						<img class="sf-card-image-top" src="/assets/images/sf-banner-16_9-m.jpg" alt="{% raw %}{{cookbook.title}}{% endraw %}">
+						<img class="sf-card-image-top" src="{% raw %}{{ cookbook.image }}{% endraw %}" alt="{% raw %}{{cookbook.title}}{% endraw %}">
 						<div class="sf-card-container">
 							<div class="sf-card-header">
 								<a href="{% raw %}{{cookbook.url}}{% endraw %}"><h5 data-ng-bind-html="cookbook.title"></h5></a>

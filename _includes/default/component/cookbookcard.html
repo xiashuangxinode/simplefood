@@ -1,12 +1,12 @@
 <div class="sf-card">
 	<div class="sf-card-tips"><a href="#">{{ cookbook.category }}</a></div>
-	<img class="sf-card-image-top" src="/assets/images/sf-banner-16_9-m.jpg" alt="{{ cookbook.title }}">
+	<img class="sf-card-image-top" src="{% if cookbook.image != nil %}{{ cookbook.image }}{% else %}/assets/images/sf-banner-16_9-m.jpg{% endif %}" alt="{{ cookbook.title }}">
 	<div class="sf-card-container">
 		<div class="sf-card-header">
 			<a href="{{cookbook.url}}"><h5>{{cookbook.title}}</h5></a>
 		</div>
 		<div class="sf-card-body">
-			<p>Inspired by Greek flavors, this warm salad is balanced by zesty lemon and feta mingling with tender salmon and fresh spring vegetables.</p>
+			<p>{{ cookbook.excerpt}}</p>
 		</div>
 		<div class="sf-card-footer"></div>
 	</div>
