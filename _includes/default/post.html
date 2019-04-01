@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-app='simpleFood' data-ng-controller='Application as app'>
+<html data-ng-app='simpleFood' data-ng-controller='Application as app' lang="zh-CN">
 <head>
 	{% include {{ site.simple_food.theme}}/component/header.html %}
 </head>
@@ -9,6 +9,8 @@
 		{% include {{ site.simple_food.theme}}/component/banner.html parent='post' %}
 		<div class="main-px sf-py">{{ content }}</div>
 		{% include {{ site.simple_food.theme}}/component/footer.html %}
+
+		<button onclick="print_cookbook()">Print</button>
 	</div>
 {% include {{ site.simple_food.theme}}/component/scripts.html %}
 </body>
