@@ -128,6 +128,7 @@
 
 		//'a4': [595.28, 841.89],
 		var doc = new jsPDF('','pt','a4');
+		/*doc.setFont('Symbol')*/
 
 		var lp = 30, tp = 35, lw = 2, mw = 595.28 - 30;
 
@@ -137,7 +138,7 @@
 		doc.addImage(image_base64, 'JPEG', (585.28 / 2 -30), 85, 60, 60)
 
 		doc.setFontSize(10)
-		doc.text(lp, 195, '3 SERVINGS	3 SERVINGS	3 SERVINGS');
+		doc.text(lp, 195, '3 SERVINGS厅	3 SERVINGS	3 SERVINGS');
 
 		doc.setLineWidth(0.2);
 		doc.line(lp, 200, mw, 200);

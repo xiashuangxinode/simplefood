@@ -22,7 +22,7 @@
 					<i class="fas fa-times" data-ng-click='navbar.toggleNavbar()'></i>
 				</li>
 				{% for m in site.data.menu %}
-				<a href="{{ m.url }}"><li class="sf-nav-link" data-ng-bind-html="'{{ m.name }}' | translate"></li></a>
+				<a href="{{ m.url }}" aria-label="进入{{ m.name }}页面"><li class="sf-nav-link" data-ng-bind-html="'{{ m.name }}' | translate"></li></a>
 				{% endfor %}
 			</ul>
 		</div>

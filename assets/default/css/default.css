@@ -279,6 +279,10 @@ ul{
 	padding-top: 4rem;
     padding-bottom: 4rem;
 }
+
+.footer a{
+	color: #bcbcbc;
+}
 .footer-links{
 	padding-bottom: 1rem;
 }
