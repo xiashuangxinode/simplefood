@@ -6,7 +6,7 @@
 		<div class="section-body sf-container-fluid">
 
 			<ul class="sf-row">
-				{% for cookbook in site.posts %}
+				{% for cookbook in site.posts limit : '4' %}
 				<li class="col-xm-12 col-md-6 col-lg-3 col-xl-3 sf-mb">{% include {{ site.simple_food.theme}}/component/cookbookcard.html %}</li>
 				{% endfor %}
 			</ul> 
@@ -22,8 +22,11 @@
 		<div class="section-body">
 			
 			<ul class="sf-row">
-				{% for cookbook in site.posts %}
+				{% for popular in site.data.popular %}
+				{% assign cookbooks = site.posts | where : 'title' , popular.title %}
+				{% for cookbook in cookbooks %}
 				<li class="col-xm-12 col-md-6 col-lg-3 col-xl-3 sf-mb">{% include {{ site.simple_food.theme}}/component/cookbookcard.html %}</li>
+				{% endfor %}
 				{% endfor %}
 			</ul> 
 		</div>
@@ -37,8 +40,11 @@
 		<div class="section-body">
 
 			<ul class="sf-row">
-				{% for cookbook in site.posts %}
+				{% for recommend in site.data.recommend %}
+				{% assign cookbooks = site.posts | where : 'title' , recommend.title %}
+				{% for cookbook in cookbooks %}
 				<li class="col-xm-12 col-md-6 col-lg-3 col-xl-3 sf-mb">{% include {{ site.simple_food.theme}}/component/cookbookcard.html %}</li>
+				{% endfor %}
 				{% endfor %}
 			</ul> 
 		</div>
