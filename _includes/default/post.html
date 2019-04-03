@@ -7,7 +7,25 @@
 	<div>
 		{% include {{ site.simple_food.theme}}/component/navbar.html %}
 		{% include {{ site.simple_food.theme}}/component/banner.html parent='post' %}
-		<div class="main-px sf-py">{{ content }}</div>
+		<div class="main-px sf-py">
+			{{ content }}
+			<div class="sf-toolbar-container">
+				<div class="sf-toolbar-container__nav">
+					<div class="m-auto d-flex w-100">
+						<div class="sf-toolbar__nav-like">
+							<img src="https://twemoji.maxcdn.com/36x36/1f60b.png" alt="我喜欢">
+							<span class="sf-toolbar__nav-label sf-toolbar__nav-label-likecount">12</span>
+						</div>
+						<div class="sf-toolbar__nav-dislike">
+							<img src="https://twemoji.maxcdn.com/36x36/1f60c.png" alt="不！我不喜欢">
+							<span class="sf-toolbar__nav-label sf-toolbar__nav-label-dislikecount">4</span>
+						</div>
+					</div>
+
+					<!-- <i class="fa fa-print sf-toolbar__nav-print" aria-hidden="true" onclick="print_cookbook()"></i> -->
+				</div>
+			</div>
+		</div>
 		{% include {{ site.simple_food.theme}}/component/footer.html %}
 
 		<!-- <button onclick="print_cookbook()">Print</button> -->
@@ -16,3 +34,4 @@
 </body>
 </html>
 {% include {{ site.simple_food.theme}}/component/deferringstyle.html %}
+{% include {{ site.simple_food.theme}}/component/deferringjs.html %}

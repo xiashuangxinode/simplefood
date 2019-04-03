@@ -24,7 +24,7 @@
 }
 
 body{
-	font-family: fa5-proxima-nova,"Helvetica Neue",'Roboto', Helvetica, sans-serif;
+	/*font-family: fa5-proxima-nova,"Helvetica Neue",'Roboto', Helvetica, sans-serif;*/
 	line-height: 1.725rem!important;
 	letter-spacing: 0.055rem!important;
 	color: #343434;
@@ -167,7 +167,8 @@ ul{
 .sf-nav{
 	background-color: white;
     display: flex;
-    box-shadow: 0px 0px 3px #ededed;
+    /*box-shadow: 0px 0px 3px #ededed;*/
+    box-shadow: 0 2px 4px rgba(0,0,0,.3);
 }
 
 .sf-nav-conter{
@@ -179,7 +180,9 @@ ul{
 .sf-nav-conter ul a:last-child{
 	padding-right: 2.25rem!important;
 }
-
+.sf-nav-conter ul a:hover{
+	color: black;
+}
 .sf-nav-right{
 	border-left: 1px solid #ededed;
 	flex-shrink: 3;
@@ -206,6 +209,10 @@ ul{
 
 .sf-nav-item .sf-nav-link{
 	padding-left: 1rem!important;
+}
+
+.sf-nav-bar-icon{
+	cursor: pointer;
 }
 
 .sf-banner{
@@ -337,12 +344,68 @@ ul{
 	position: absolute;
     background-color: rgba(230,63,33,1);
     color: white;
-    padding: .25rem;
+    padding: .25rem .5rem;
     font-size: 85%;
 }
 .sf-card-tips a{
     color: white;
 }
+
+.sf-toolbar-container{
+	display: flex;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.sf-toolbar-container__nav{
+	padding-top: .85rem;
+	padding-bottom: .85rem;
+	 width: 100%;
+    display: flex;
+}
+
+.sf-toolbar__nav-like,
+.sf-toolbar__nav-dislike{
+	padding-right: 1rem!important;
+	align-items: center;
+    display: flex!important;
+}
+
+.sf-toolbar__nav-like .sf-toolbar__nav-label,
+.sf-toolbar__nav-dislike .sf-toolbar__nav-label{
+	padding-right: 1rem!important;
+    padding-left: .85rem;
+}
+
+.sf-toolbar__nav-label-likecount:before{
+	content: "+";
+}
+
+.sf-toolbar__nav-label-dislikecount:before{
+	content: "-"
+}
+
+
+.sf-toolbar__nav-like img,
+.sf-toolbar__nav-dislike img{
+	width: 1.75rem!important;
+	height: 1.75rem!important;
+	cursor: pointer;
+}
+.sf-toolbar__nav-like img:hover{
+	animation: pulse 1.5s;
+}
+
+.sf-toolbar__nav-dislike img:hover{
+	animation: tada 1.5s;
+}
+
+.sf-toolbar__nav-print{
+    cursor: pointer;
+    align-self: center;
+}
+
 @media (max-width: 991.98px){
 	
 	.sf-nav-left{
