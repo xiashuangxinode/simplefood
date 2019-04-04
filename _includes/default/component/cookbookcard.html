@@ -1,5 +1,9 @@
 <div class="sf-card">
-	<div class="sf-card-tips"><a href="/cookbooks/categorys/{{ cookbook.category }}">{{ cookbook.category }}</a></div>
+	
+		{% assign cbts = site.data.cookbooktyps | where : 'name',cookbook.category %}
+		{% for cbt in cbts %}
+		<div class="sf-card-tips"><a href="/cookbooks/categorys/{{ cookbook.category }}" data-ng-bind-html="'{{ cbt.i18n_name}}' | translate"></a></div>
+		{% endfor %}
 	<img class="sf-card-image-top" src="{% if cookbook.image != nil %}{{ cookbook.image | replace: '.jpg', '-mini.jpg' }}{% else %}/assets/images/sf-banner-16_9-m.jpg{% endif %}" alt="{{ cookbook.title }}">
 	<div class="sf-card-container">
 		<div class="sf-card-header">
