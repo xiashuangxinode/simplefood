@@ -26,10 +26,21 @@
 				{% endfor %}
 			</ul>
 		</div>
-		<div class="sf-nav-right sf-nav-py sf-nav-px">
+		<div class="sf-nav-right sf-nav-py sf-nav-px ">
 			<i class="fas fa-search sf-nav-bar-icon"  data-ng-click='app.searchContainer()' ></i>
 		</div>
+
 	</div>
 
 	<!-- <div class="sf-tips" data-ng-hide="{{show}}"><small> <span  data-ng-bind-html="'cookieStatementTips' | translate"></span><a href="#"><span  data-ng-bind-html="'cookieStatementTipsClose' | translate"></span></a> </small></div> -->
+	{% if include.containerPage == 'category' %}
+	<div class="sf-nav-item__nav sf-nav-py">
+		<ul class="sf-nav-item__nav-item">
+			{% for category in site.categories %}
+			{% assign i18nCategory = site.data.cookbooktyps | where : 'name' , category[0] %}
+			<li class="{% if page.category == {{category[0]}} %} active {% endif %}"><a href="/cookbooks/categorys/{{category[0]}}" data-ng-bind-html="'{{ i18nCategory[0].i18n_name }}' | translate ">{{ category[0] }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endif %}
 </div>

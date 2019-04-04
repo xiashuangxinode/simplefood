@@ -77,6 +77,9 @@ ul{
     left: 0;
     top: 0;
     z-index: 2000;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08), 0 0 1px rgba(1,0,0,.1);
+    font-weight: 500;
 }
 
 .sf-tips{
@@ -168,7 +171,8 @@ ul{
 	background-color: white;
     display: flex;
     /*box-shadow: 0px 0px 3px #ededed;*/
-    box-shadow: 0 2px 4px rgba(0,0,0,.3);
+    /*box-shadow: 0 2px 4px rgba(0,0,0,.3);*/
+    /*box-shadow: 0 4px 12px rgba(0,0,0,.08), 0 0 1px rgba(1,0,0,.1);*/
 }
 
 .sf-nav-conter{
@@ -405,6 +409,60 @@ ul{
     cursor: pointer;
     align-self: center;
 }
+
+.sf-nav-item__nav{
+	padding-left:  1rem;
+	padding-right: 1rem;
+	    padding-top: .85rem!important;
+    padding-bottom: .85rem!important;
+        font-size: .90rem;
+
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+}
+
+.sf-nav-item__nav-item{
+	display: flex!important;
+	margin-bottom: 0rem!important;
+
+}
+.sf-nav-item__nav-item a{
+	text-decoration: none;
+}
+
+.sf-nav-item__nav-item li{
+	padding-right: .5rem!important;
+	padding-left: .5rem!important;
+	position: relative;
+}
+
+.sf-nav-item__nav-item .active:after{
+	content: "";
+    height: 4px;
+    background-color: black;
+    bottom: -14px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+}
+/*.sf-nav-item__nav-item li:hover:after{
+visibility: visible;
+}*/
+
+.sf-nav-item__nav-item li:hover:after{
+	content: "";
+    height: 4px;
+    background-color: black;
+    bottom: -14px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+   /* visibility: visible;
+    transform: scale3d(0, 1,1);
+    transition: transform ease 200ms; */
+}
+
 
 @media (max-width: 991.98px){
 	

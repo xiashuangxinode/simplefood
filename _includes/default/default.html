@@ -5,8 +5,10 @@
 </head>
 <body data-ng-cloak class="ng-cloak">
 	<div>
-		{% include {{ site.simple_food.theme}}/component/navbar.html %}
-		{% include {{ site.simple_food.theme}}/component/banner.html %}
+		
+		{% include {{ site.simple_food.theme}}/component/navbar.html containerPage = include.containerPage %}
+		
+		{% include {{ site.simple_food.theme}}/component/banner.html  containerPage = include.containerPage %}
 		<div class="main-px sf-py">{{ content }}</div>
 		{% include {{ site.simple_food.theme}}/component/footer.html %}
 	</div>

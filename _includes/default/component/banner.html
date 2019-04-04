@@ -1,11 +1,41 @@
 <div class="sf-banner">
+
+	{% if include.containerPage == 'more' %}
+	<style type="text/css">
+		.sf-banner{
+			background-image: none;
+			background-color: red;
+			height: 9vh;
+			min-height:73px;/*170px;*/
+		}
+		@media (max-width: 991.98px){
+			.sf-banner{
+				height: 8vh;
+			min-height:73px;
+			}
+		}
+	</style>
+	{% elsif include.containerPage == 'category'  %}
+	<style type="text/css">
+		.sf-banner{
+			background-image: none;
+			background-color: red;
+			height: 17vh;
+			min-height:80px;/*170px;*/
+		}
+		@media (max-width: 991.98px){
+			.sf-banner{
+				min-height: 128px;
+				height: 15vh;
+			}
+		}
+	</style>
+	{% else %}
 	<div class="sf-page-banner-title sf-py main-px">
 		{% if include.parent == 'post' %}
 		<style type="text/css">.sf-banner{background-image: url('{{page.image}}');}</style>
 		<h1 ng-bind-html="'{{ page.title }}' | translate">  </h1>
 		<p class="font-weight-normal">{{ page.excerpt }}</p>
-	
-			
 			<ul class="sf-cookbook-mate">
 				<li class="sf-cookbook-mate-item"><small>{{ page.servings }}<span class="sf-cookbook-mate-unit text-uppercase" data-ng-bind-html="'servings' | translate"></span></small></li>
 				<li class="sf-cookbook-mate-item"><small>{{ page.minute }}<span class="sf-cookbook-mate-unit text-uppercase" data-ng-bind-html="'minute' | translate"></span></small></li>
@@ -15,4 +45,7 @@
 		<h1 class="text-uppercase" data-ng-bind-html="'{{ page.i18n_title }}' | translate">  </h1>
 		{% endif %}
 	</div>
+	{% endif %}
 </div>
+
+
